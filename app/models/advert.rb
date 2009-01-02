@@ -109,5 +109,8 @@ class Advert < ActiveRecord::Base
     if rent_frequency == "Weekly"
       self.rent = (self.rent * 52)/12
     end
+    
+    #remove full stops from the headline
+    self.headline = self.headline.gsub('.', '')
   end
 end
