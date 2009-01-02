@@ -1,0 +1,2 @@
+<div id="advert_details"><%= show_advert(@advert, "show") %></div>
+<div id="form_holder"></div>

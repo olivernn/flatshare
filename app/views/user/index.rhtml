@@ -1,0 +1,96 @@
+<div id="accordion_holder">
+
+<% cache(:action => 'index', :part => 'messages', :id => @user.id) do %>
+	<h2 class="title">Messages</h2>
+	<div id="messages" class="expand">
+		<p>Any messages you receive from other users can be accessed from here</p>
+		<p>You have <%= @user.count_unread_messages %> new messages <br/>
+		<%= link_to 'View messages', :action => 'show_messages'%></p>
+	<br/></div>
+<% end %>
+
+<% cache(:action => 'index', :part => 'advert', :id => @user.id) do %>
+	<h2 class="title">Advert Controls</h2>
+	<div id="advert" class="expand">
+		<% unless @user.has_advert %>
+			<p>You don't have an advert set up yet<br/>
+			<%= link_to 'Create Flatshare Advert', :action => 'new_flatshare' %> | 
+			<%= link_to 'Create Flatseeker Advert', :action => 'new_flatseeker' %></p>
+		<% else %>
+		<p>Details of your advert can be found here</p>
+			<p>
+				<%= @advert.headline %>
+				<%= link_to image_tag("/images/icons/layout_edit.png", :alt => 'edit advert', :title => 'edit advert'), :action => 'edit_advert'%>
+				<%= link_to image_tag("/images/icons/layout.png", :alt => 'show advert', :title => 'show  advert'), :action => 'show_advert'%>
+				<%= refresh_advert_link(@advert) %>
+			</p>
+			<% unless @advert.quarantine %>
+			<p>Your advert has been viewed <%= counter(@advert.views_counter) %>, looking for a way to increase the effectiveness of your
+				advert?  Click <%= link_to 'here', :controller => 'pages', :action => 'show_article', :id => 15 %> to view a couple of suggestions on creating an eye catching advert</p>
+			<% else %>
+				<p>Your advert has been <%= link_to 'quarantined', :controller => 'pages', :action => 'show_article', :id => 17 %>, it will not show up in any searches until you make some changes to it!  For more info click <%= link_to 'here', :controller => 'pages', :action => 'show_article', :id => 17 %></p>
+			<% end %>
+		<% end %>
+	<br/></div>
+<% end %>
+
+<% cache(:action => 'index', :part => 'matching_adverts', :id => @user.id) do %>
+<h2 class="title">Matching Adverts</h2>
+<div id="matching_adverts" class="expand">
+		<p>We will use the details in your advert to search for other adverts that we think you may be interested in, if we find any
+			good ones we'll list them here for you to take a look at.  If one takes your eye then contact the owner!</p>
+		<% if @user.has_advert && @matching_adverts.size > 0 %>
+			<p>Here are some adverts that you might be interested in <%= map_adverts_link(@matching_adverts) %></p>
+			<table id="matching_adverts">
+				<% @matching_adverts.each do |advert| %>
+					<tr>
+						<td><%= link_to advert.headline, :action => 'view_advert', :id => advert.id  %></td>
+						<td><%= truncate(advert.description,60) %></td>
+						<td><%= link_to icon('layout','show advert details'), :action => 'view_advert', :id => advert.id %></td>
+					</tr>
+				<% end %>
+			</table>
+		<% end %>
+<br/></div>
+<% end %>
+
+<% cache(:action => 'index', :part => 'favourite_adverts', :id => @user.id) do %>
+<h2 class="title">Favourite Adverts</h2>
+<div id="favourites" class="expand">
+	<p>Seen a good advert whilst searching on this site, add it to your favourites!  All your favourites will be displayed here
+		so you can come back and look at them at any time.  That advert not as good as you remember?  Just remove it from your 
+		favourite list using the links provided</p>
+	<% if @user.has_favourites %>
+		<table id="favourite_flatshares">
+			<% @favourite_adverts.each do |favourite_advert| %>
+				<tr>
+					<td><%= link_to favourite_advert.headline, :action => 'view_advert', :id => favourite_advert.id %></td>
+					<td><%= truncate(favourite_advert.description,60) %></td>
+					<td><%= link_to icon('heart_delete', 'remove advert from favourties'), :method => 'post', :action => 'delete_favourite', :id => favourite_advert.id %></td>
+					<td><%= link_to icon('layout','show advert'), :action => 'view_advert', :id => favourite_advert.id %></td>
+				</tr>
+			<% end %>
+		</table>
+	<% end %>
+<br/></div>
+<% end %>
+
+<h2 class="title">Account Controls</h2>
+<div id="account" class="expand">
+	<p>Click on the icons below to log out, edit your profile or change your password</p>
+	<p><%= link_to icon('door_in', 'log out'), :action => 'logout'%> |
+	   <%= link_to icon('user_edit', 'edit your profile'), :action => 'edit_user' %> |
+	   <%= link_to icon('key_go', 'change your password'), :action => 'edit_password' %>
+	</p>
+	<% if @user.authority == 9 %>
+		<p><%= link_to 'lookups', :controller => 'lookups', :action => 'index' %>
+		<%= link_to 'stations', :controller => 'stations', :action => 'index' %>
+		<%= link_to 'help_texts', :controller => 'help_texts', :action => 'index' %>
+		<%= link_to 'pages', :controller => 'pages', :action => 'index' %>
+		<%= link_to 'promotions', :controller => 'promotions', :action => 'index' %></p>
+	<% end %>
+<br/></div>
+<%= accordion('title', 'expand', :alwaysHide => true) %></div>
+<div id="account_content">
+	<h1>Your Account</h1>
+<%= @page.content %></div>

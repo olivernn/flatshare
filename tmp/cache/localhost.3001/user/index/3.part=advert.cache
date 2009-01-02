@@ -1,0 +1,17 @@
+
+	<h2 class="title">Advert Controls</h2>
+	<div id="advert" class="expand">
+		
+		<p>Details of your advert can be found here</p>
+			<p>
+				Clean & tidy, not smelly, flatmate.  I'm awesome!
+				<a href="/user/edit_advert"><img alt="edit advert" src="/images/icons/layout_edit.png?1142200446" title="edit advert" /></a>
+				<a href="/user/show_advert"><img alt="show advert" src="/images/icons/layout.png?1142200442" title="show  advert" /></a>
+				<a href="#" id="refresh_advert_button" onclick="new Ajax.Request('/user/refresh_advert/17', {asynchronous:true, evalScripts:true}); return false;"><img alt="refresh your advert" src="/images/icons/arrow_refresh.png?1142200128" title="refresh your advert" /></a>
+			</p>
+			
+			<p>Your advert has been viewed 36 times, looking for a way to increase the effectiveness of your
+				advert?  Click <a href="/pages/show_article/15">here</a> to view a couple of suggestions on creating an eye catching advert</p>
+			
+		
+	<br/></div>

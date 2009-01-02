@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>London Flatmate - Create Flatshare Advert</title>
+  <meta name="keywords" content="London, flatshare, flat share, flatsharing, flatseeker, flat seeker, room wanted, roommate, renting, sharing, flats, homes, houses, rental, bedsit, houseshare, house share, shared accommodation, rooms to let, room to let, room to rent, rooms to rent, flatmate, flat mate"/>
+  <meta name="description" content="Find a flatshare or a flatmate fast!  Loads of accurate adverts for rooms and roommates in London makes us the best place to advertise your flatshare"/>
+  <link href="/stylesheets/scaffold.css?1219840323" media="screen" rel="Stylesheet" type="text/css" />
+  <link href="/stylesheets/my_styles.css?1225656227" media="screen" rel="Stylesheet" type="text/css" />
+  <!--[if IE 6]>
+	<link href="/stylesheets/ie_hacks.css?1225658744" media="screen" rel="Stylesheet" type="text/css" />
+  <![endif]-->
+  <script src="/javascripts/prototype.js?1218315270" type="text/javascript"></script>
+<script src="/javascripts/effects.js?1212599455" type="text/javascript"></script>
+<script src="/javascripts/dragdrop.js?1212599455" type="text/javascript"></script>
+<script src="/javascripts/controls.js?1212687221" type="text/javascript"></script>
+<script src="/javascripts/widgets/tooltip.js?1214765578" type="text/javascript"></script>
+<script src="/javascripts/application.js?1223837791" type="text/javascript"></script>
+  <script src="/javascripts/moo.fx.js?1162571230" type="text/javascript"></script>
+  <script src="/javascripts/accordion.js?1162571230" type="text/javascript"></script>
+  <script src="/javascripts/ufo.js?1221386726" type="text/javascript"></script>
+   
+</head>
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+	var pageTracker = _gat._getTracker("UA-6178997-1");
+	pageTracker._trackPageview();
+</script>
+<body>
+<div id="container">
+	<div id="banner">
+		<h1><a href="/"><img alt="LondonFlatmate" src="/images/logo.png?1213626641" title="LondonFlatmate" /></a></h1>
+		<div class="main_tabnav" id="main_tabnav"><ul><li class="active"><a href="/user" class="active" title="My Account">My Account</a></li> 
+<li><a href="/flatshare" title="Flatshares">Flatshares</a></li> 
+<li><a href="/flatseekers" title="Flatseekers">Flatseekers</a></li> 
+<li><a href="/pages/article_list" title="Information">Information</a></li> 
+</ul></div>
+
+		<img id='busy' class='busy' src='/images/ajax-loader.gif'/>
+	</div>
+
+	
+	<div id='flash'></div>
+
+
+	<div id="wrapper">
+		
+
+<div id="advert_edit_form">
+	<form action="/user/create_flatshare" method="post">
+  		
+
+<!--[form:flatshare]-->
+<fieldset id="flatshare">
+	<legend>Details</legend>
+	<div class='help_holder'><div id='details_help'></div></div>
+	
+	<label for="flatshare_rent">Rent</label>
+	<input class="small_field" id="flatshare_rent" name="flatshare[rent]" onblur="new Effect.Fade(&quot;details_help&quot;,{duration:0.2});" onfocus="new Ajax.Updater('details_help', '/user/get_help_text?name=rent', {asynchronous:true, evalScripts:true, onComplete:function(request){new Effect.Appear(&quot;details_help&quot;,{duration:0.2});}})" size="30" type="text" /><select id="flatshare_rent_frequency" name="flatshare[rent_frequency]"><option value="Monthly">Monthly</option>
+<option value="Weekly">Weekly</option></select><br/>
+		
+	<label for="flatshare_bills">Bills</label>
+	<input class="small_field" id="flatshare_bills" name="flatshare[bills]" onblur="new Effect.Fade(&quot;details_help&quot;,{duration:0.2});" onfocus="new Ajax.Updater('details_help', '/user/get_help_text?name=bills', {asynchronous:true, evalScripts:true, onComplete:function(request){new Effect.Appear(&quot;details_help&quot;,{duration:0.2});}})" size="30" type="text" /><select id="flatshare_bills_frequency" name="flatshare[bills_frequency]"><option value="Monthly">Monthly</option>
+<option value="Weekly">Weekly</option></select><br/>
+	
+	<label for="flatshare_deposit">Deposit</label>
+	<input class="small_field" id="flatshare_deposit" name="flatshare[deposit]" onblur="new Effect.Fade(&quot;details_help&quot;,{duration:0.2});" onfocus="new Ajax.Updater('details_help', '/user/get_help_text?name=deposit', {asynchronous:true, evalScripts:true, onComplete:function(request){new Effect.Appear(&quot;details_help&quot;,{duration:0.2});}})" size="30" type="text" /><br/>
+	
+	<label for ="flatshare_area">Area</label>
+	<style type="text/css">            div.auto_complete {
+              width: 350px;
+              background: #fff;
+            }
+            div.auto_complete ul {
+              border:1px solid #888;
+              margin:0;
+              padding:0;
+              width:100%;
+              list-style-type:none;
+            }
+            div.auto_complete ul li {
+              margin:0;
+              padding:3px;
+            }
+            div.auto_complete ul li.selected { 
+              background-color: #ffb; 
+            }
+            div.auto_complete ul strong.highlight { 
+              color: #800; 
+              margin:0;
+              padding:0;
+            }
+</style><input class="medium_field" frequency="0.2" id="flatshare_area" name="flatshare[area]" onblur="new Effect.Fade(&quot;details_help&quot;,{duration:0.2});" onfocus="new Ajax.Updater('details_help', '/user/get_help_text?name=flatshare_area', {asynchronous:true, evalScripts:true, onComplete:function(request){new Effect.Appear(&quot;details_help&quot;,{duration:0.2});}})" size="30" type="text" /><div class="auto_complete" id="flatshare_area_auto_complete"></div><script type="text/javascript">
+//<![CDATA[
+var flatshare_area_auto_completer = new Ajax.Autocompleter('flatshare_area', 'flatshare_area_auto_complete', '/user/auto_complete_for_flatshare_area', {})
+//]]>
+</script><br/>
+
+	<label for="flatshare_postcode">Postcode</label>
+	<input class="small_field" id="flatshare_postcode" name="flatshare[postcode]" onblur="new Effect.Fade(&quot;details_help&quot;,{duration:0.2});" onfocus="new Ajax.Updater('details_help', '/user/get_help_text?name=postcode', {asynchronous:true, evalScripts:true, onComplete:function(request){new Effect.Appear(&quot;details_help&quot;,{duration:0.2});}})" size="30" type="text" /><br/>
+
+	<label for="flatshare_date_available">Date available</label>
+	<select id="flatshare_date_available_1i" name="flatshare[date_available(1i)]">
+<option value="2003">2003</option>
+<option value="2004">2004</option>
+<option value="2005">2005</option>
+<option value="2006">2006</option>
+<option value="2007">2007</option>
+<option value="2008" selected="selected">2008</option>
+<option value="2009">2009</option>
+<option value="2010">2010</option>
+<option value="2011">2011</option>
+<option value="2012">2012</option>
+<option value="2013">2013</option>
+</select>
+<select id="flatshare_date_available_2i" name="flatshare[date_available(2i)]">
+<option value="1">January</option>
+<option value="2">February</option>
+<option value="3">March</option>
+<option value="4">April</option>
+<option value="5">May</option>
+<option value="6">June</option>
+<option value="7">July</option>
+<option value="8">August</option>
+<option value="9">September</option>
+<option value="10">October</option>
+<option value="11" selected="selected">November</option>
+<option value="12">December</option>
+</select>
+<select id="flatshare_date_available_3i" name="flatshare[date_available(3i)]">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3" selected="selected">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+<br/>
+	
+	<label for="flatshare_room_type">Room Type</label>
+	<select id="flatshare_room_type" name="flatshare[room_type]"><option value="Single">Single</option>
+<option value="Double">Double</option>
+<option value="Large Double">Large Double</option></select><br/>
+
+	<label for="flatshare_available_to_couples">Couples</label>
+	<input id="flatshare_couples" name="flatshare[couples]" type="checkbox" value="1" /><input name="flatshare[couples]" type="hidden" value="0" /><br/>
+	
+	<label for="flatshare_furnished">Furnished</label>
+	<input id="flatshare_furnished" name="flatshare[furnished]" type="checkbox" value="1" /><input name="flatshare[furnished]" type="hidden" value="0" /><br/>
+	
+	<label for="flatshare_smoking">Smoking</label>
+	<input id="flatshare_smoking" name="flatshare[smoking]" type="checkbox" value="1" /><input name="flatshare[smoking]" type="hidden" value="0" />
+</fieldset>
+
+<fieldset id="flatshare_description">
+	<legend>Description</legend>
+	<div class='help_holder'><div id='descriptions_help'></div></div>
+	
+	<label for="flatshare_headline">Headline</label>
+	<input class="large_field" id="flatshare_headline" name="flatshare[headline]" onblur="new Effect.Fade(&quot;descriptions_help&quot;,{duration:0.2});" onfocus="new Ajax.Updater('descriptions_help', '/user/get_help_text?name=headline', {asynchronous:true, evalScripts:true, onComplete:function(request){new Effect.Appear(&quot;descriptions_help&quot;,{duration:0.2});}})" size="30" type="text" /><br/>
+	
+	<label for="flatshare_housemates">Housemates</label>
+	<input class="small_field" id="flatshare_housemates" name="flatshare[housemates]" onblur="new Effect.Fade(&quot;descriptions_help&quot;,{duration:0.2});" onfocus="new Ajax.Updater('descriptions_help', '/user/get_help_text?name=housemates', {asynchronous:true, evalScripts:true, onComplete:function(request){new Effect.Appear(&quot;descriptions_help&quot;,{duration:0.2});}})" size="30" type="text" /><br/>
+
+	<label for="flatshare_interests">Interests</label>
+	<textarea class="small_area" cols="40" id="flatshare_interests" name="flatshare[interests]" onblur="new Effect.Fade(&quot;descriptions_help&quot;,{duration:0.2});" onfocus="new Ajax.Updater('descriptions_help', '/user/get_help_text?name=interests', {asynchronous:true, evalScripts:true, onComplete:function(request){new Effect.Appear(&quot;descriptions_help&quot;,{duration:0.2});}})" rows="20"></textarea><br/>
+	
+	<label for="flatshare_description">Description</label>
+	<textarea class="medium_area" cols="40" id="flatshare_description" name="flatshare[description]" onblur="new Effect.Fade(&quot;descriptions_help&quot;,{duration:0.2});" onfocus="new Ajax.Updater('descriptions_help', '/user/get_help_text?name=description', {asynchronous:true, evalScripts:true, onComplete:function(request){new Effect.Appear(&quot;descriptions_help&quot;,{duration:0.2});}})" rows="20"></textarea>
+</fieldset>
+<!--[eoform:flatshare]-->
+
+
+  		<fieldset id="rich_attribute">
+	<legend>Extra Details</legend>
+	<div class='help_holder'><div id='rich_attribute_help'></div></div>
+	<label for="rich_attribute_name">Name</label>
+	<style type="text/css">            div.auto_complete {
+              width: 350px;
+              background: #fff;
+            }
+            div.auto_complete ul {
+              border:1px solid #888;
+              margin:0;
+              padding:0;
+              width:100%;
+              list-style-type:none;
+            }
+            div.auto_complete ul li {
+              margin:0;
+              padding:3px;
+            }
+            div.auto_complete ul li.selected { 
+              background-color: #ffb; 
+            }
+            div.auto_complete ul strong.highlight { 
+              color: #800; 
+              margin:0;
+              padding:0;
+            }
+</style><input class="medium_field" frequency="0.2" id="rich_attribute_name" name="rich_attribute[name]" onblur="new Effect.Fade(&quot;rich_attribute_help&quot;,{duration:0.2});" onfocus="new Ajax.Updater('rich_attribute_help', '/user/get_help_text?name=rich_attribute_name', {asynchronous:true, evalScripts:true, onComplete:function(request){new Effect.Appear(&quot;rich_attribute_help&quot;,{duration:0.2});}})" size="30" type="text" /><div class="auto_complete" id="rich_attribute_name_auto_complete"></div><script type="text/javascript">
+//<![CDATA[
+var rich_attribute_name_auto_completer = new Ajax.Autocompleter('rich_attribute_name', 'rich_attribute_name_auto_complete', '/user/auto_complete_for_rich_attribute_name', {})
+//]]>
+</script>
+	<input onclick="	if($(rich_attribute_name).value != &quot;&quot;) {if ($(rich_attribute_selected).value == &quot;&quot;) { 	$(rich_attribute_selected).value += $(rich_attribute_name).value;$(rich_attribute_name).value = &quot;&quot;} else {$(rich_attribute_selected).value += &quot;,&quot; + $(rich_attribute_name).value; $(rich_attribute_name).value = &quot;&quot;}};" type="button" value="Add attribute" /><br/>
+
+	<label for="rich_attriubte_selected">Selected Attributes</label>
+	<textarea class="medium_area" cols="40" id="rich_attribute_selected" name="rich_attribute[selected]" rows="20"></textarea>
+</fieldset>
+
+
+  		<input class='button' type='image' src='/images/create_button.png' alt='Form Submit Button'>
+	</form>
+
+	<a href="/user">Back</a>
+</div>
+	</div>
+	<div id="footer"><ul id="footer_list">
+	<li><a href="/">Welcome</a></li>
+	
+		
+			<li><a href="/pages/show_article/18-about-us">About Us</a></li>
+		
+			<li><a href="/pages/show_article/19-contact-us">Contact Us</a></li>
+		
+	
+	<li><a href="/pages/terms_and_conditions">Terms & Conditions</a></li>
+	<li><a href="/pages/contact_us">Contact Us</a></li>
+	<li><a href="javascript:bookmarksite('The best place to advertise your flatshare', 'http://londonflatmate.net/user/new_flatshare');">Bookmark this page</a></li>
+</ul></div>
+</div>
+</body>
+</html>

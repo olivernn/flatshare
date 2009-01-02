@@ -1,0 +1,8 @@
+<% form_for(:image, :url => {:controller => 'image', :action => 'create'}, :html => {:multipart => true}) do |form| %>
+	<fieldset id="add_picture">
+		<legend>Add Picture</legend>
+		<label for="image_uploaded_data">File</label>
+		<%= form.file_field "uploaded_data", :class => "medium_field"%><br/>
+		<%= submit_tag("Upload file")%>
+	</fieldset>
+<% end %>

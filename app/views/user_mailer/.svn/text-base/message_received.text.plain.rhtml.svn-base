@@ -1,0 +1,9 @@
+Dear <%= @user.full_name %>,
+
+<%= @sender.full_name %> sent you the following message...
+
+<%= @message.message %>
+
+You can reply to <%= @sender.full_name %> by logging into your account here http://londonflatmate.net/user/show_messages
+
+LondonFlatmate.net

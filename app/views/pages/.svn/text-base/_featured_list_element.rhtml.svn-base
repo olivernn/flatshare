@@ -1,0 +1,3 @@
+<li><%= link_to image_tag(advert.images.first.public_filename(:thumb)), :controller => 'user', :action => 'view_advert', :id => advert %><br/>
+<%= link_to( truncate(advert.headline,22), :controller => 'user', :action => 'view_advert', :id => advert )%><br/>
+<%= advert.area %></li>

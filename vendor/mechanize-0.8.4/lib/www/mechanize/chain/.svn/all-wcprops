@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/chain
+END
+handler.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/chain/handler.rb
+END
+post_connect_hook.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/chain/post_connect_hook.rb
+END
+pre_connect_hook.rb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/chain/pre_connect_hook.rb
+END
+uri_resolver.rb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/chain/uri_resolver.rb
+END
+response_reader.rb
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/chain/response_reader.rb
+END
+connection_resolver.rb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/chain/connection_resolver.rb
+END
+ssl_resolver.rb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/chain/ssl_resolver.rb
+END
+body_decoding_handler.rb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/chain/body_decoding_handler.rb
+END
+response_body_parser.rb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/chain/response_body_parser.rb
+END
+auth_headers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/chain/auth_headers.rb
+END
+parameter_resolver.rb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/chain/parameter_resolver.rb
+END
+response_header_handler.rb
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/chain/response_header_handler.rb
+END
+custom_headers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/chain/custom_headers.rb
+END
+request_resolver.rb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/chain/request_resolver.rb
+END
+header_resolver.rb
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/chain/header_resolver.rb
+END

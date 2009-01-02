@@ -1,0 +1,16 @@
+<%= error_messages_for 'station' %>
+
+<!--[form:station]-->
+<p><label for="station_name">Name</label><br/>
+<%= text_field 'station', 'name'  %></p>
+
+<p><label for="station_postcode">Postcode</label><br/>
+<%= text_field 'station', 'postcode'  %></p>
+
+<p><label for="station_lat">Lat</label><br/>
+<%= text_field 'station', 'lat'  %></p>
+
+<p><label for="station_lng">Lng</label><br/>
+<%= text_field 'station', 'lng'  %></p>
+<!--[eoform:station]-->
+

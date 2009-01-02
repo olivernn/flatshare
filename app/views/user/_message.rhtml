@@ -1,0 +1,10 @@
+<div id="reading_message">
+	<p><b>From: </b><%=link_to @message.senders_name, :action => 'view_advert', :id => @message.senders_advert %></p>
+	<p><b>Subject: </b><%= @message.subject %></p>
+	<p><%= @message.message %></p>
+
+	<%= link_to_remote icon('email_go', 'reply to this message'), :url => {:action => 'reply_message', :id => @message }%> |
+	<%= link_to icon('layout', 'view the senders advert'), :action => 'view_advert', :id => @message.senders_advert %>
+
+	<div id="message_form"></div>
+</div>

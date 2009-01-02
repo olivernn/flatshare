@@ -1,0 +1,7 @@
+page.select('#navigation li').each do |tab|
+  tab.removeClassName("selected_tab")
+end
+
+page.select('#users_tab').addClassName("selected_tab")
+
+page.alert("helo")

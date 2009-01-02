@@ -1,0 +1,2 @@
+<%= show_advert(@advert, "show") %>
+<%= link_to icon('house', 'back'), :action => 'index' %>

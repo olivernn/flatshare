@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/rails_projects/!svn/ver/1/flatshare/test/functional
+END
+flatseeker_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/rails_projects/!svn/ver/10/flatshare/test/functional/flatseeker_controller_test.rb
+END
+rich_attriubte_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/rails_projects/!svn/ver/1/flatshare/test/functional/rich_attriubte_controller_test.rb
+END
+flatseekers_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/rails_projects/!svn/ver/10/flatshare/test/functional/flatseekers_controller_test.rb
+END
+login_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/rails_projects/!svn/ver/12/flatshare/test/functional/login_controller_test.rb
+END
+flatshare_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/rails_projects/!svn/ver/1/flatshare/test/functional/flatshare_controller_test.rb
+END

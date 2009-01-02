@@ -1,0 +1,34 @@
+<table id="flatseeker_results_table">
+	<tr>
+		<th>Max Rent</th>
+		<th>Headline</th>
+		<th>Area</th>
+	</tr>
+	<% if @flatseekers %>
+		<% @flatseekers.each do |flatseeker| %>
+		<tr>
+			<td><%= number_to_currency(flatseeker.rent, :precision => 2, :unit => '£') %></td>
+			<td><%= link_to_remote flatseeker.headline, 
+					{:url => {:action => 'show', :id => flatseeker.id}, 
+					:update => 'flatseeker_advert_display', 
+					:before => visual_effect(:fade, 'flatseeker_advert_display', :duration => 0.2), 
+					:complete => visual_effect(:appear, 'flatseeker_advert_display', :duration => 0.2)},
+					:href => url_for(:action => 'show', :id => flatseeker) %> <%= is_new_advert(flatseeker.created_at)%> <%= has_pictures(flatseeker.images) %></td>
+			<td><%= flatseeker.area%></td>
+			<td><%= link_to_remote icon('information','advert details'), 
+					{:url => {:action => 'show', :id => flatseeker.id}, 
+					:update => 'flatseeker_advert_display', 
+					:before => visual_effect(:fade, 'flatseeker_advert_display', :duration => 0.2), 
+					:complete => visual_effect(:appear, 'flatseeker_advert_display', :duration => 0.2)},
+					:href => url_for(:action => 'show', :id => flatseeker)  %></td>
+		<tr>
+		<% end %>
+	<% end %>
+</table>
+<% unless !@flatseekers || @flatseekers.empty? %>
+  <%= will_paginate @flatseekers, :renderer => WillPaginate::RemoteLinkRenderer, 
+								  :remote => {:replace => "flatseeker_search_results",
+											  :before => visual_effect(:fade, "flatseeker_search_results", :duration => 0.2)},
+								  :params => {:controller => 'flatseekers', :action => 'list'} %>
+<% end %>
+

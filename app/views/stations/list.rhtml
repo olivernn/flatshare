@@ -1,0 +1,27 @@
+<h1>Listing stations</h1>
+
+<table>
+  <tr>
+  <% for column in Station.content_columns %>
+    <th><%= column.human_name %></th>
+  <% end %>
+  </tr>
+  
+<% for station in @stations %>
+  <tr>
+  <% for column in Station.content_columns %>
+    <td><%=h station.send(column.name) %></td>
+  <% end %>
+    <td><%= link_to 'Show', :action => 'show', :id => station %></td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => station %></td>
+    <td><%= link_to 'Destroy', { :action => 'destroy', :id => station }, :confirm => 'Are you sure?', :method => :post %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Previous page', { :page => @station_pages.current.previous } if @station_pages.current.previous %>
+<%= link_to 'Next page', { :page => @station_pages.current.next } if @station_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New station', :action => 'new' %>

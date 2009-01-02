@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/rails_projects/!svn/ver/2/flatshare/config
+END
+locomotive.yml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/rails_projects/!svn/ver/11/flatshare/config/locomotive.yml
+END
+routes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/rails_projects/!svn/ver/52/flatshare/config/routes.rb
+END
+database.yml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/rails_projects/!svn/ver/38/flatshare/config/database.yml
+END
+boot.rb
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/rails_projects/!svn/ver/1/flatshare/config/boot.rb
+END
+environment.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/rails_projects/!svn/ver/51/flatshare/config/environment.rb
+END
+gmaps_api_key.yml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/rails_projects/!svn/ver/40/flatshare/config/gmaps_api_key.yml
+END
+newrelic.yml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/rails_projects/!svn/ver/40/flatshare/config/newrelic.yml
+END
+amazon_s3.yml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/rails_projects/!svn/ver/31/flatshare/config/amazon_s3.yml
+END
+thin.god
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/rails_projects/!svn/ver/57/flatshare/config/thin.god
+END
+deploy.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/rails_projects/!svn/ver/54/flatshare/config/deploy.rb
+END

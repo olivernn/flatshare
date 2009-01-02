@@ -1,0 +1,16 @@
+Dear <%= @user[:first_name]%> <%= @user[:second_name] %>,
+
+At LondonFlatmate.net we pride ourselves on the accuracy of the adverts that we provide to our customers. To ensure this we allow all our users to rate adverts that appear on our site, letting them be the judge of how accurate an advert is.
+    
+Unfortunately your advert has been flagged as inaccurate on three separate occasions, this is the threshold that we set at which point we will take action. Please take this as a polite notice to change your advert to be more accurate for the people who arrange viewings with you.  Until your advert is made more accurate it will not be displayed on the LondonFlatmate.net site, nor will it be recommended to anyone, if it is left in quarantine for a prolonged duration it will be permanently removed.
+    
+If you think that your advert has been unfairly flagged as being inaccurate then please do get in touch at contact@LondonFlatmate.net and we will do our best to resolve this issue.
+
+<% unless @flags.empty? %>
+We have included the comments that people made when flagging your advert to help you make your advert accurate and get it back on the site.
+    <% @flags.each do |flag| %>
+        <%= flag.flag_comment.gsub!(/<\/?[^>]*>/, "") %>
+    <% end %>
+<% end %>
+
+LondonFlatmate.net

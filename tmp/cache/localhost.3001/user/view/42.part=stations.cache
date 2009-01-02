@@ -1,0 +1,32 @@
+
+	<div id="local_stations">
+		<h3>Local Stations</h3>
+		<table id="station_table">
+		
+			<tr>
+				<td>Clapham Junction</td>
+				<td>0.6 miles away</td>
+			</tr>
+		
+			<tr>
+				<td>Wandsworth Common</td>
+				<td>0.9 miles away</td>
+			</tr>
+		
+			<tr>
+				<td>Queenstown Road (Battersea)</td>
+				<td>0.9 miles away</td>
+			</tr>
+		
+			<tr>
+				<td>Earlsfield</td>
+				<td>1.1 miles away</td>
+			</tr>
+		
+			<tr>
+				<td>Wandsworth Town</td>
+				<td>1.2 miles away</td>
+			</tr>
+		
+		</table>
+	</div>

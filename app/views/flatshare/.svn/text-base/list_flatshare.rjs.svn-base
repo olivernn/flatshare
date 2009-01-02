@@ -1,0 +1,11 @@
+page['flash'].replace :partial => 'shared/flash'
+page << @map.clear_overlays
+
+unless !@flatshares || @flatshares.empty?
+  @map_markers.each do |@marker|
+    page << @map.add_overlay(@marker)
+  end
+
+  page << @map.setCenter(@map_centre)
+  page << @map.set_zoom(14)
+end

@@ -1,0 +1,12 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+  first: 
+    rich_attribute_id: 13
+    advert_id: 22
+
+  second: 
+    rich_attribute_id: 7
+    advert_id: 22
+
+  third: 
+    rich_attribute_id: 14
+    advert_id: 22

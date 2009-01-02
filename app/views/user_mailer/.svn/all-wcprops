@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/rails_projects/!svn/ver/17/flatshare/app/views/user_mailer
+END
+advert_innacurate_admin.text.plain.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/rails_projects/!svn/ver/25/flatshare/app/views/user_mailer/advert_innacurate_admin.text.plain.rhtml
+END
+new_password.text.plain.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/rails_projects/!svn/ver/49/flatshare/app/views/user_mailer/new_password.text.plain.rhtml
+END
+new_password.text.html.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/rails_projects/!svn/ver/49/flatshare/app/views/user_mailer/new_password.text.html.rhtml
+END
+stale_advert.text.plain.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/rails_projects/!svn/ver/28/flatshare/app/views/user_mailer/stale_advert.text.plain.rhtml
+END
+stale_advert.text.html.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/rails_projects/!svn/ver/28/flatshare/app/views/user_mailer/stale_advert.text.html.rhtml
+END
+matching_adverts.text.plain.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/rails_projects/!svn/ver/53/flatshare/app/views/user_mailer/matching_adverts.text.plain.rhtml
+END
+send_to_friend.text.plain.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/rails_projects/!svn/ver/31/flatshare/app/views/user_mailer/send_to_friend.text.plain.rhtml
+END
+advert_innacurate_warning.text.plain.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/rails_projects/!svn/ver/53/flatshare/app/views/user_mailer/advert_innacurate_warning.text.plain.rhtml
+END
+advert_innacurate_admin.html.plain.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/rails_projects/!svn/ver/25/flatshare/app/views/user_mailer/advert_innacurate_admin.html.plain.rhtml
+END
+payment_receipt.text.plain.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/rails_projects/!svn/ver/49/flatshare/app/views/user_mailer/payment_receipt.text.plain.rhtml
+END
+payment_receipt.text.html.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/rails_projects/!svn/ver/49/flatshare/app/views/user_mailer/payment_receipt.text.html.rhtml
+END
+message_received.text.plain.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/rails_projects/!svn/ver/49/flatshare/app/views/user_mailer/message_received.text.plain.rhtml
+END
+welcome.text.plain.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/rails_projects/!svn/ver/68/flatshare/app/views/user_mailer/welcome.text.plain.rhtml
+END
+message_received.text.html.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/rails_projects/!svn/ver/49/flatshare/app/views/user_mailer/message_received.text.html.rhtml
+END
+welcome.text.html.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/rails_projects/!svn/ver/68/flatshare/app/views/user_mailer/welcome.text.html.rhtml
+END
+contact_mail.text.plain.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/rails_projects/!svn/ver/49/flatshare/app/views/user_mailer/contact_mail.text.plain.rhtml
+END
+matching_adverts.html.plain.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/rails_projects/!svn/ver/53/flatshare/app/views/user_mailer/matching_adverts.html.plain.rhtml
+END
+advert_innacurate_warning.html.plain.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/rails_projects/!svn/ver/49/flatshare/app/views/user_mailer/advert_innacurate_warning.html.plain.rhtml
+END

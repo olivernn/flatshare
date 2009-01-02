@@ -1,0 +1,22 @@
+<div id="login_content">
+	<%= @page.content %>
+</div>
+
+<div id="log_in_form">
+	<% form_tag do %>
+	<fieldset>
+		<legend>Please log in</legend>
+			<label for="email">Email</label>
+			<%= text_field_tag :email, params[:email] %><br/>
+			
+			<label for="password">Password</label>
+			<%= password_field_tag :password, params[:password] %>
+			<%= link_to icon ('key_go', 'reset your password'), :action => 'reset_password' %><br/>
+			
+		<%= button 'login'%>
+	</fieldset>
+	<% end %>
+</div>
+<div id="new_user_form">
+	<%= render :partial => 'new_user_form' %>
+</div>

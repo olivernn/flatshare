@@ -1,0 +1,18 @@
+<%= error_messages_for 'flatshare' %>
+
+<fieldset id='place_form'>
+	<legend>New Place</legend>
+	<label for='place_name'>Name</label>
+	<%= text_field 'place', 'name', :class => 'medium_field' %>
+	
+	<label for='place_description'>Description</label>
+	<%= text_area 'place', 'description', :class => 'medium_area' %>
+	
+	<label for='place_category'>Category</label>
+	<%= collection_select 'place', 'category', @category, 'value', 'value'%>
+	
+	<label for='place_postcode'>Postcode</label>
+	<%= text_field 'place', 'postcode', :class => 'small_field' %>
+	
+	<br/><%= submit_tag "Create" %>
+</fieldset>

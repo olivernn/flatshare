@@ -1,0 +1,16 @@
+<% title "Advice for Happy Flatsharing" %>
+
+<div id="article_list">
+	<h2>Articles</h2>
+	<ul>
+		<% @articles.each do |article| %>
+			<li><%= link_to_remote article.name, {:url => {:action => 'show_article', :id => article},
+												  :update => 'article_display',
+			 									  :before => visual_effect(:fade, 'article_display', :duration => 0.2), 
+			 									  :complete => visual_effect(:appear, 'article_display', :duration => 0.2)},
+												  :href => url_for(:action => 'show_article', :id => article) %>
+												 </li>
+		<% end %>
+	</ul>
+</div>
+<div id="article_display"><%= @page.content %></div>

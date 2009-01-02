@@ -1,0 +1,2 @@
+page.visual_effect :blind_up, :send_message
+page['flash'].replace :partial => 'shared/flash'

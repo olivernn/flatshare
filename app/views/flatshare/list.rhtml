@@ -1,0 +1,21 @@
+<h1>Flatshares</h1>
+
+<table>
+  <tr>
+    <th>Headline</th>
+    <th>Area</th>
+	<th>Rent</th>
+	<th>Advert Added</th>
+  </tr>
+<% unless !@flatshares || @flatshares.empty? %> 
+  <% for flatshare in @flatshares %>
+    <tr>
+	  <td><%= flatshare.headline %></td>
+	  <td><%= flatshare.area %></td>
+	  <td><%= flatshare.rent %></td>
+	  <td><%= time_ago_in_words(flatshare.created_at) %></td>
+      <td><%= link_to 'Show', :action => 'show', :id => flatshare %></td>
+    </tr>
+  <% end %>
+<% end %>
+</table>

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/rails_projects/!svn/ver/1/flatshare/test/fixtures
+END
+users.yml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/rails_projects/!svn/ver/34/flatshare/test/fixtures/users.yml
+END
+favorites.yml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/rails_projects/!svn/ver/34/flatshare/test/fixtures/favorites.yml
+END
+stations.yml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/rails_projects/!svn/ver/35/flatshare/test/fixtures/stations.yml
+END
+messages.yml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/rails_projects/!svn/ver/34/flatshare/test/fixtures/messages.yml
+END
+flatseekers.yml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/rails_projects/!svn/ver/10/flatshare/test/fixtures/flatseekers.yml
+END
+rich_attributes.yml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/rails_projects/!svn/ver/34/flatshare/test/fixtures/rich_attributes.yml
+END
+rich_attriubtes.yml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/rails_projects/!svn/ver/1/flatshare/test/fixtures/rich_attriubtes.yml
+END
+flatshares.yml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/rails_projects/!svn/ver/1/flatshare/test/fixtures/flatshares.yml
+END
+lookups.yml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/rails_projects/!svn/ver/1/flatshare/test/fixtures/lookups.yml
+END
+pictures.yml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/rails_projects/!svn/ver/1/flatshare/test/fixtures/pictures.yml
+END

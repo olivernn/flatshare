@@ -1,0 +1,3 @@
+<%= link_to_remote icon('picture_add', 'add picture'), :url => {:controller => 'image', :action => 'new', :id => advert}, :update => 'form_holder' %> |
+<%= link_to icon('layout_edit', 'edit'), :controller => 'user', :action => 'edit_advert', :id => advert %> |
+<%= link_to icon('house', 'home'), :controller => 'user', :action => 'index' %>

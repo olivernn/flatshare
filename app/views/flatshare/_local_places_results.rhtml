@@ -1,0 +1,14 @@
+<% if @places %>
+  <p>Below are places we found within walking distance of this flatshare</p>
+  <% @places.each do |place| %>
+    <p>
+	  <b>Name:</b> <%= place.name %><br/>
+	  <b>Address: </b><%= place.address %><br/>
+	  <b>Description: </b><%= place.description %><br/>
+	  <b>Review: </b><%= place.reviews.first if place.reviews %><br/>
+    </p>
+  <% end %>
+  <p><a href="http://trustedplaces.com/"><img src="http://trustedplaces.com/img/v3/api/logo_01.png" alt="Powered by TrustedPlaces" style="border:0px;vertical-align:bottom;" /></a></p>
+<% else %>
+  <p>We can't seem to get any local reviews at the moment, try again later</p>
+<% end %>

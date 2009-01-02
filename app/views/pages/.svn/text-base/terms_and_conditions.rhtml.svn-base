@@ -1,0 +1,4 @@
+<div id="article_display">
+	<h1><%= @article.name %></h1>
+	<%= @article.content %>
+</div>

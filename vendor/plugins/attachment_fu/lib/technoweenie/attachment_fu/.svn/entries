@@ -1,0 +1,41 @@
+9
+
+dir
+30
+http://ONightin@onightin.svn.beanstalkapp.com/rails_projects/flatshare/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu
+http://ONightin@onightin.svn.beanstalkapp.com/rails_projects
+
+
+
+2008-09-11T20:28:23.913181Z
+30
+ONightin
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+
+processors
+dir
+
+backends
+dir
+

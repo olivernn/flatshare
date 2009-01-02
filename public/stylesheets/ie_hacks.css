@@ -1,0 +1,9 @@
+/* because internet explorer 6 is a pile of crap */
+
+/*this is hopefully going to fix the bug in IE that is causing
+  text input on forms to not be floated correctly, causing them
+  to be displayed in one long line.  This will also solve the 
+  problem with the login box on the welcome page. */
+fieldset{
+	height: 1%;
+}

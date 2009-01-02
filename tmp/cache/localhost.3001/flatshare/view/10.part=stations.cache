@@ -1,0 +1,32 @@
+
+	<div id="local_stations">
+		<h3>Local Stations</h3>
+		<table id="station_table">
+		
+			<tr>
+				<td>Clapham Junction</td>
+				<td>0.4 miles away</td>
+			</tr>
+		
+			<tr>
+				<td>Queenstown Road (Battersea)</td>
+				<td>0.6 miles away</td>
+			</tr>
+		
+			<tr>
+				<td>Battersea Park</td>
+				<td>1.2 miles away</td>
+			</tr>
+		
+			<tr>
+				<td>Wandsworth Road</td>
+				<td>1.2 miles away</td>
+			</tr>
+		
+			<tr>
+				<td>Imperial Wharf</td>
+				<td>1.3 miles away</td>
+			</tr>
+		
+		</table>
+	</div>

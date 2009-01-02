@@ -1,0 +1,5 @@
+page.replace_html("message_form", :partial => "shared/send_message", :object => @message)
+page[:message_user_id].value = @message.from_id
+page[:message_subject].value = 'RE: ' + @message.subject
+page[:message_message].value = ''
+page[:message_from_id].value = @message.user_id

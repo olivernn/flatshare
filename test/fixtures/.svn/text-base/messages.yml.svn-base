@@ -1,0 +1,18 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+read:
+    message: "This message has been read"
+    read: 1
+    subject: "You already read me!"
+    id: 4
+    user_id: 1
+    from_id: 3
+    created_at: "2008-08-09 14:55:07"
+
+unread:
+    message: "This message hasn't been read"
+    read: 0
+    subject: "Readme!"
+    id: 5
+    user_id: 1
+    from_id: 3
+    created_at: "2008-08-09 14:55:07"

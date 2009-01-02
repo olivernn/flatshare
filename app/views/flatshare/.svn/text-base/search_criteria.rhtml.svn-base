@@ -1,0 +1,10 @@
+<div id="search_form">
+	<% form_remote_tag(:url => {:action => 'list_flatshare'}) do %>
+		<b>Maximum Monthly Rent: </b><%= text_field 'flatshare', 'max_rent'  %><br/>
+		<b>Area : </b><%= text_field_with_auto_complete :flatshare, :area %>
+		<%= submit_tag 'Search' %>
+	<% end %>
+</div>
+<%= @map.div(:width => 600, :height => 400) %>
+<div id="search_results"></div>
+<div id="advert_display"></div>

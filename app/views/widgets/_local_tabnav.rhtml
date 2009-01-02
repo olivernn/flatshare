@@ -1,0 +1,22 @@
+<% render_tabnav :local, 
+              	 :generate_css => false do 
+         
+  add_tab do |t|
+    t.named 'Pictures'
+    t.titled 'Pictures'
+    t.links_to :controller => 'flatshare', :action => 'local_pictures', :id => @flatshare.id
+  end
+
+  add_tab do |t|
+    t.named 'Reviews'
+    t.titled 'Reviews'
+    t.links_to :controller => 'flatshare', :action => 'local_reviews'
+  end
+
+  add_tab do |t|
+    t.named 'Travel'
+    t.titled 'Travel'
+    t.links_to :controller => 'flatseekers', :action => 'local_travel'
+  end
+end
+%>

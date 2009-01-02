@@ -1,0 +1,19 @@
+<% title @page.name  %>
+
+<div id="article_form_content">
+<h1><%= @page.name %></h1>
+<%= @page.content %>
+</div>
+
+<% form_tag :action => 'contact_us' do %>
+	<fieldset>
+		<legend>Contact Us</legend>
+		<label for="contact_us_email">Your Email</label>
+		<%= text_field 'contact_us', 'email' %>
+
+		<label for="contact_us_message">Message</label>
+		<%= text_area 'contact_us', 'message' %>
+		
+		<%= button 'send' %>
+	</fieldset>
+<% end %>

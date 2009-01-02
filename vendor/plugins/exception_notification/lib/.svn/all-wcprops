@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/rails_projects/!svn/ver/26/flatshare/vendor/plugins/exception_notification/lib
+END
+exception_notifier.rb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/rails_projects/!svn/ver/26/flatshare/vendor/plugins/exception_notification/lib/exception_notifier.rb
+END
+exception_notifiable.rb
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/rails_projects/!svn/ver/26/flatshare/vendor/plugins/exception_notification/lib/exception_notifiable.rb
+END
+exception_notifier_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/rails_projects/!svn/ver/26/flatshare/vendor/plugins/exception_notification/lib/exception_notifier_helper.rb
+END

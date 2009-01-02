@@ -1,0 +1,18 @@
+<div id="places">
+	<h3>My Places</h3>
+		<p><%= link_to icon('building_add', 'add a new place'), :action => 'new_place' %> |
+		   <%= link_to icon('map', 'map_places'), :action => 'map_places' %></p>
+		<% if @places %>
+			<table id="user_places">
+				<% @places.each do |place| %>
+					<tr>
+						<td><%= link_to place.name, :action => 'view_place', :id => place.id %></td>
+						<td><%= place.category %></td>
+						<td><%= link_to icon('building', 'view place details'), :action => 'view_place', :id => place.id %></td>
+						<td><%= link_to icon('building_edit', 'edit place details'), :action => 'edit_place', :id => place.id %></td>
+						<td><%= link_to icon('building_delete', 'remove place'), :action => 'delete_place', :id => place.id %></td>
+					</tr>
+				<% end %>
+			</table>
+		<% end %>
+</div>

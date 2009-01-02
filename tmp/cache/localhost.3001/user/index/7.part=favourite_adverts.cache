@@ -1,0 +1,19 @@
+
+<h2 class="title">Favourite Adverts</h2>
+<div id="favourites" class="expand">
+	<p>Seen a good advert whilst searching on this site, add it to your favourites!  All your favourites will be displayed here
+		so you can come back and look at them at any time.  That advert not as good as you remember?  Just remove it from your 
+		favourite list using the links provided</p>
+	
+		<table id="favourite_flatshares">
+			
+				<tr>
+					<td><a href="/user/view_advert/16">Flat with views of the Thames</a></td>
+					<td><p>Great flat, modern fittings and furnishings.  The loun...</td>
+					<td><a href="/user/delete_favourite/16?method=post"><img alt="remove advert from favourties" src="/images/icons/heart_delete.png?1142200416" title="remove advert from favourties" /></a></td>
+					<td><a href="/user/view_advert/16"><img alt="show advert" src="/images/icons/layout.png?1142200442" title="show advert" /></a></td>
+				</tr>
+			
+		</table>
+	
+<br/></div>

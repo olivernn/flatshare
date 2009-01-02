@@ -1,0 +1,11 @@
+<fieldset id="rich_attribute">
+	<legend>Extra Details</legend>
+	<%= fieldset_help "rich_attribute_help" %>
+	<label for="rich_attribute_name">Name</label>
+	<%= auto_complete_with_help "rich_attribute", "name", "medium_field", "rich_attribute_name", "rich_attribute_help" %>
+	<%= button_to_function 'Add attribute', '	if($(rich_attribute_name).value != "") {if ($(rich_attribute_selected).value == "") { 	$(rich_attribute_selected).value += $(rich_attribute_name).value;$(rich_attribute_name).value = ""} else {$(rich_attribute_selected).value += "," + $(rich_attribute_name).value; $(rich_attribute_name).value = ""}}'%><br/>
+
+	<label for="rich_attriubte_selected">Selected Attributes</label>
+	<%= text_area 'rich_attribute', 'selected', :class => "medium_area"%>
+</fieldset>
+

@@ -1,0 +1,212 @@
+body {
+	width:75%;
+	background-image:url("/images/background.png");
+}
+
+a {
+	color:#FA0045;
+}
+
+form {
+	width: 400px;
+}
+
+fieldset{
+	background-color: #FFFBB0;
+	border: 1px solid #ccc;
+	margin: 2em 0;
+	padding: 1em;
+}
+
+legend{
+	font-size:2em;
+	position: relative;
+	top: -.1em;
+	color:#FA0045;
+	font-family:futura;
+}
+
+label{
+	font-weight:bold;
+}
+
+/*layout*/
+#container{
+	position:center;
+	width:90%;
+	background-image:url(/images/mint_fade.png);
+	background-repeat:repeat-x;
+	background-position:bottom;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#wrapper{
+	clear:both;
+}
+
+/* banner main_tabnav */
+#banner_nav{
+	float:right;
+	list-style-type:none;
+}
+
+#banner_nav li{
+	list-style-type:none;
+	float:left;
+}
+
+/* styling the tabs */
+#main_tabnav {
+	clear:both;
+	font-weight:bold;
+	color:#666;
+	margin-left:4px;
+	float:right;
+	list-style-type:none;
+	position:absolute;
+	bottom:20px;
+	right:5px;
+}
+
+#main_tabnav ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#main_tabnav li {
+	float:left;
+	margin:0;
+	padding:0;
+	padding:0 0 0 0;
+}
+
+#main_tabnav a {
+	display:block;
+	background-image:url("/images/unactive_tab.png");
+	padding:4px 18px 2px 18px;
+	margin:0 2px 0 2px;
+	width:84px;
+}
+
+#main_tabnav li.active {
+	/*background-image:url("/images/right_active_tab.png");*/
+}
+
+#main_tabnav a.active {
+	background-image:url("/images/active_tab.png");
+	color:#FA0045;
+}
+
+/* styling the flash */
+#flash {
+	position:relative;
+	font-family:Helvetica;
+}
+
+#flash .flash_notice{
+	color:#FFF934;
+}
+
+#flash .flash_warning{
+	color:#B42025;
+}
+
+#flash .flash_message{
+	color:#1EB444;
+}
+
+/* styles for the banner */
+#banner {
+	background:#381E0B;
+	background-image:url(/images/banner_mint_fade.png);
+	background-repeat:repeat-x;
+	background-position:bottom;
+	color:#FA0045;
+	height:86px;
+	position:relative;
+}
+
+#banner h1 {
+	padding:0;
+	margin:0;
+	position:absolute;
+	top:5px;
+	left:15px;
+}
+
+/* styles for different field types */
+input.tiny_field{
+	width:2em;
+}
+
+input.small_field{
+	width:5em;
+}
+
+input.medium_field{
+	width:10em;
+}
+
+input.large_field{
+	width:20em;
+}
+
+textarea.small_area{
+	width:10em;
+	height:6em;
+}
+
+textarea.medium_area{
+	width:20em;
+	height:10em;
+}
+
+/* displaying the flatshares */
+
+/* displaying the advert */
+#flatshare_pictures img{
+	width:8em;
+	height:8em;
+}
+
+#flatshare_details{
+	padding:5px;
+	border:1px solid #ccc;
+	width:50%;
+	margin:5px;
+}
+
+#advert_lists {
+	padding:5px;
+	border:1px solid #ccc;
+	width:60%;
+	margin:5px;
+}
+
+#advert_lists table {
+	margin:10px;
+}
+
+#advert_lists td {
+	padding:5px;
+}
+
+#flatshare_details div{
+	padding:5px;
+}
+
+#controls {
+	padding:5px;
+	border:1px solid #ccc;
+	width:50%;
+	margin:5px;
+}
+
+#picture_form {
+	padding:5px;
+	border:1px solid #ccc;
+	width:50%;
+	margin:5px;
+}

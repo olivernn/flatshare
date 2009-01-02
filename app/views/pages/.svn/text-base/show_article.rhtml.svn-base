@@ -1,0 +1,7 @@
+<% title @article.name %>
+<% meta_description @article.snippet %>
+<div id="article_display">
+	<h1><%= @article.name %></h1>
+	<%= @article.content %>
+	<%= link_to "Back", :action => 'article_list' %>
+</div>

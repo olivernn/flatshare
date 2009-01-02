@@ -1,0 +1,53 @@
+
+<h1><%= @flatshare.headline %></h1>
+<div id="description">
+	<b>Rent: </b><%= number_to_currency(@flatshare.rent, :precisioin => 2, :unit => '£') %> per month<br/>
+	<b>Bills: </b><%= number_to_currency(@flatshare.bills, :precisioin => 2, :unit => '£') %> per month<br/>
+	<b>Number of Housemates: </b><%= @flatshare.housemates %><br/>
+	<% if @flatshare.interests? %>
+		<b>There interests are: </b><%= @flatshare.interests %><br/>
+	<% end %>
+	<p><%= @flatshare.description %></p>
+	<b>Flat available from: </b><%= @flatshare.date_available %><br/>
+	<b>Furnished: </b><%= display_boolean(@flatshare.furnished) %>
+	<b>Smoking: </b><%= display_boolean(@flatshare.smoking) %>
+	<b>Deposit: </b><%= number_to_currency(@flatshare.deposit, :precision => 2, :unit => '£') %>
+	<b>Room Type: </b><%= @flatshare.room_type %>
+	<p>Advert is <%= time_ago_in_words(@flatshare.created_at)%> old</p>
+</div>
+
+<% cache(:action => 'view', :part => 'rich_attr', :id => @flatshare.id) do %>
+	<% unless @flatshare.rich_attributes.empty? %>
+		<div id="flatshare_attributes">
+			<b>The flat has the following...</b>
+			<% @flatshare.rich_attributes.each do |attribute| %>
+				<br/><%= attribute.name %>
+			<% end %>
+		</div>
+	<% end %>
+<% end %>
+
+<% cache(:action => 'view', :part => 'stations', :id => @flatshare.id) do %>
+	<div id="local_stations">
+		<h3>Local Stations</h3>
+		<table id="station_table">
+		<% @flatshare.nearest_stations.each do |station| %>
+			<tr>
+				<td><%= station.name %></td>
+				<td><%= number_with_precision(station.distance,1)%> miles away</td>
+			</tr>
+		<% end %>
+		</table>
+	</div>
+<% end %>
+
+<% cache(:action => 'view', :part => 'pictures', :id => @flatshare.id) do %>
+	<% unless @flatshare.images.empty? %>
+		<div id="pictures">
+			<h3>Pictures</h3>
+			<%= render :partial => 'shared/slideshow', :locals => {:advert => @flatshare} %>
+		</div>
+	<% end %>
+<% end %>
+
+<%= advert_controls(@flatshare) %>

@@ -1,0 +1,2 @@
+page["message_#{params[:id]}"].visual_effect :drop_out
+page.remove "message_#{params[:id]}"

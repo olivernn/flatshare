@@ -1,0 +1,2 @@
+page.replace_html("advert_display", :partial => "advert")
+page.toggle "bills_rent_weekly"

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/rails_projects/!svn/ver/1/flatshare/vendor/plugins/ym4r_gm/lib/gm_plugin
+END
+map.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/rails_projects/!svn/ver/1/flatshare/vendor/plugins/ym4r_gm/lib/gm_plugin/map.rb
+END
+geocoding.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/rails_projects/!svn/ver/1/flatshare/vendor/plugins/ym4r_gm/lib/gm_plugin/geocoding.rb
+END
+helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/rails_projects/!svn/ver/1/flatshare/vendor/plugins/ym4r_gm/lib/gm_plugin/helper.rb
+END
+control.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/rails_projects/!svn/ver/1/flatshare/vendor/plugins/ym4r_gm/lib/gm_plugin/control.rb
+END
+overlay.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/rails_projects/!svn/ver/1/flatshare/vendor/plugins/ym4r_gm/lib/gm_plugin/overlay.rb
+END
+key.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/rails_projects/!svn/ver/1/flatshare/vendor/plugins/ym4r_gm/lib/gm_plugin/key.rb
+END
+point.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/rails_projects/!svn/ver/1/flatshare/vendor/plugins/ym4r_gm/lib/gm_plugin/point.rb
+END
+mapping.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/rails_projects/!svn/ver/1/flatshare/vendor/plugins/ym4r_gm/lib/gm_plugin/mapping.rb
+END
+layer.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/rails_projects/!svn/ver/1/flatshare/vendor/plugins/ym4r_gm/lib/gm_plugin/layer.rb
+END

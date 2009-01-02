@@ -1,0 +1,7 @@
+<%= image_slideshow({:file => @local_pictures.create_request(params[:flickr]),
+ 	:transition => 'bgfade',
+	:showicons => true,
+	:shownavigation => true,
+	:width => 475,
+	:height => 300},
+	{:id => 'flickr'}) %>

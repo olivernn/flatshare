@@ -1,0 +1,4 @@
+open '/flatshare'
+type "flatshare_area", "Clapham"
+click "name=commit"
+assert_text_present("No matching flatshares found")

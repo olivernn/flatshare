@@ -1,0 +1,11 @@
+<% form_for(:picture, :url => {:action => 'save_picture', :id => @advert.id}, :html => {:multipart => true}) do |form| %>
+	<fieldset id="add_picture">
+		<legend>Add Picture</legend>
+		<label for="picture_comment">Comment</label>
+		<%= form.text_field "comment", :class => "medium_field"%>
+		
+		<label for="picture_uploaded_picture">File</label>
+		<%= form.file_field "uploaded_picture", :class => "medium_field"%><br/>
+		<%= submit_tag("Upload file")%>
+	</fieldset>
+<% end %>

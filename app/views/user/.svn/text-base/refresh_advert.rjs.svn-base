@@ -1,0 +1,3 @@
+page['flash'].replace :partial => 'shared/flash'
+page.visual_effect :appear, 'flash'
+page.remove 'refresh_advert_button'

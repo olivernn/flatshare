@@ -1,0 +1,7 @@
+<% form_remote_tag(:url => {:action => 'list_flatshare'}) do %>
+	<fieldset id="search_criteria">
+		<b>Maximum Monthly Rent: </b><%= text_field 'flatshare', 'max_rent'  %><br/>
+		<b>Area : </b><br/><%= text_field_with_auto_complete :flatshare, :area %><br/>
+		<%= submit_tag 'Search' %>
+	</fieldset>
+<% end %>

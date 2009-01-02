@@ -1,0 +1,7 @@
+<div id="picture_form">
+<% form_for(:picture, :url => {:action => 'save_picture', :id => @flatshare.id}, :html => {:multipart => true}) do |form| %>
+	<label for="picture_comment">Comment: </label><%= form.text_field "comment", :class => "large_field"%></br>
+	<%= form.file_field "uploaded_picture" %></br>
+	<%= submit_tag("Upload file")%>
+<% end %>
+</div>

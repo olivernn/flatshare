@@ -1,0 +1,11 @@
+<% title "Create Flatseeker Advert" %>
+
+<div id="advert_edit_form">	
+	<% form_tag :action => 'create_flatseeker' do %>
+  	  <%= render :partial => 'flatseekers/form' %>
+  	  <%= render :partial => 'rich_attribute/form'%>
+      <%= button "create" %>
+    <% end %>
+
+    <%= link_to 'Back', :action => 'list' %>
+</div>

@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/rails_projects/!svn/ver/2/flatshare/app/models
+END
+user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/rails_projects/!svn/ver/35/flatshare/app/models/user.rb
+END
+favorite.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/rails_projects/!svn/ver/12/flatshare/app/models/favorite.rb
+END
+batch.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/rails_projects/!svn/ver/53/flatshare/app/models/batch.rb
+END
+station.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/rails_projects/!svn/ver/18/flatshare/app/models/station.rb
+END
+image.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/rails_projects/!svn/ver/48/flatshare/app/models/image.rb
+END
+place.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/rails_projects/!svn/ver/68/flatshare/app/models/place.rb
+END
+message.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/rails_projects/!svn/ver/45/flatshare/app/models/message.rb
+END
+advert.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/rails_projects/!svn/ver/70/flatshare/app/models/advert.rb
+END
+flatseeker.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/rails_projects/!svn/ver/53/flatshare/app/models/flatseeker.rb
+END
+promotion.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/rails_projects/!svn/ver/21/flatshare/app/models/promotion.rb
+END
+journey.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/rails_projects/!svn/ver/68/flatshare/app/models/journey.rb
+END
+help_text.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/rails_projects/!svn/ver/17/flatshare/app/models/help_text.rb
+END
+video.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/rails_projects/!svn/ver/68/flatshare/app/models/video.rb
+END
+quarantine.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/rails_projects/!svn/ver/26/flatshare/app/models/quarantine.rb
+END
+user_mailer.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/rails_projects/!svn/ver/68/flatshare/app/models/user_mailer.rb
+END
+rich_attribute.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/rails_projects/!svn/ver/20/flatshare/app/models/rich_attribute.rb
+END
+flatshare.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/rails_projects/!svn/ver/70/flatshare/app/models/flatshare.rb
+END
+lookup.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/rails_projects/!svn/ver/70/flatshare/app/models/lookup.rb
+END
+flag.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/rails_projects/!svn/ver/25/flatshare/app/models/flag.rb
+END
+place_search.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/rails_projects/!svn/ver/68/flatshare/app/models/place_search.rb
+END
+flickr.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/rails_projects/!svn/ver/68/flatshare/app/models/flickr.rb
+END
+picture.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/rails_projects/!svn/ver/31/flatshare/app/models/picture.rb
+END
+page.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/rails_projects/!svn/ver/70/flatshare/app/models/page.rb
+END

@@ -1,0 +1,27 @@
+<h1>Listing help_texts</h1>
+
+<table>
+  <tr>
+  <% for column in HelpText.content_columns %>
+    <th><%= column.human_name %></th>
+  <% end %>
+  </tr>
+  
+<% for help_text in @help_texts %>
+  <tr>
+  <% for column in HelpText.content_columns %>
+    <td><%=h help_text.send(column.name) %></td>
+  <% end %>
+    <td><%= link_to 'Show', :action => 'show', :id => help_text %></td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => help_text %></td>
+    <td><%= link_to 'Destroy', { :action => 'destroy', :id => help_text }, :confirm => 'Are you sure?', :method => :post %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Previous page', { :page => @help_text_pages.current.previous } if @help_text_pages.current.previous %>
+<%= link_to 'Next page', { :page => @help_text_pages.current.next } if @help_text_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New help_text', :action => 'new' %>

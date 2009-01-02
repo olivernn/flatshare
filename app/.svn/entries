@@ -1,0 +1,43 @@
+9
+
+dir
+3
+http://ONightin@onightin.svn.beanstalkapp.com/rails_projects/flatshare/app
+http://ONightin@onightin.svn.beanstalkapp.com/rails_projects
+
+
+
+2008-06-05T06:08:19.819241Z
+2
+ONightin
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+368aaf9d-2c01-482e-a271-8484209ccfac
+
+helpers
+dir
+
+models
+dir
+
+controllers
+dir
+
+views
+dir
+
+sweepers
+dir
+

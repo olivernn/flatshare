@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/test/chain
+END
+test_response_reader.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/test/chain/test_response_reader.rb
+END
+test_parameter_resolver.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/test/chain/test_parameter_resolver.rb
+END
+test_custom_headers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/test/chain/test_custom_headers.rb
+END
+test_argument_validator.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/test/chain/test_argument_validator.rb
+END
+test_request_resolver.rb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/test/chain/test_request_resolver.rb
+END

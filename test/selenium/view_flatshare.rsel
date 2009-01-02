@@ -1,0 +1,5 @@
+open '/flatshare'
+type "flatshare_area", "Battersea"
+click "name=commit", :wait => true
+click "mtgt_unnamed_5"
+assert_text_present("No matching flatshares found")

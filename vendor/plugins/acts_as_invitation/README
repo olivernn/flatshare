@@ -1,0 +1,34 @@
+= Acts as Invitation
+
+Make your Rails site virally Web 2.0 complaint by adding the 
++acts_as_invitation+ plugin!
+
+Acts as Invitation allows you to easily add "send to a friend" functionality
+to any of your model classes. You create a new class to represent the 
+invitations sent. Then add <tt>has_many :invitations</tt> to your model.
+
+== Usage
+
+Install the plugin with:
+
+  script/plugin install svn://rubyforge.org/var/svn/slantwise/acts_as_invitation/trunk acts_as_invitation
+
+
+Run the included generator to create your invitation model.
+
+  script/generate invitation Invitation
+
+("+Invitation+" can be what ever you want -- +SendToFriend+, 
++Recommendation+, etc.)
+
+This will create an +Invitation+ model and an +InvitationMailer+.
+
+Open up the generated +Invitation+ model to make any changes you need.
+
+Your +Invitation+ model can be polymorphic if you want to track invitations
+of multiple classes, or simply set it to +belong_to+ a single model.
+
+Then, change your models you want to be "inviteable", add 
+<tt>has_many :invitations</tt>.
+
+Finally, create your views and ensure your SMTP server is configure properly.

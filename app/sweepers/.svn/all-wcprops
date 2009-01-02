@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/rails_projects/!svn/ver/18/flatshare/app/sweepers
+END
+favourite_sweeper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/rails_projects/!svn/ver/35/flatshare/app/sweepers/favourite_sweeper.rb
+END
+message_sweeper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/rails_projects/!svn/ver/35/flatshare/app/sweepers/message_sweeper.rb
+END
+flatseeker_sweeper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/rails_projects/!svn/ver/54/flatshare/app/sweepers/flatseeker_sweeper.rb
+END
+flatshare_sweeper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/rails_projects/!svn/ver/70/flatshare/app/sweepers/flatshare_sweeper.rb
+END
+page_sweeper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/rails_projects/!svn/ver/53/flatshare/app/sweepers/page_sweeper.rb
+END

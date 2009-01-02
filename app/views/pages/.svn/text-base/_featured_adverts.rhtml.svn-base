@@ -1,0 +1,5 @@
+<ul id='featured_advert_list'>
+	<% @featured_adverts.each do |advert| %>
+		<%= render :partial => 'featured_list_element', :locals => {:advert => advert} %>
+	<% end %>	
+</ul>

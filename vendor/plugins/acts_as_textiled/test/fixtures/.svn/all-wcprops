@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/rails_projects/!svn/ver/19/flatshare/vendor/plugins/acts_as_textiled/test/fixtures
+END
+story.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/rails_projects/!svn/ver/19/flatshare/vendor/plugins/acts_as_textiled/test/fixtures/story.rb
+END
+author.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/rails_projects/!svn/ver/19/flatshare/vendor/plugins/acts_as_textiled/test/fixtures/author.rb
+END
+authors.yml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/rails_projects/!svn/ver/19/flatshare/vendor/plugins/acts_as_textiled/test/fixtures/authors.yml
+END
+stories.yml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/rails_projects/!svn/ver/19/flatshare/vendor/plugins/acts_as_textiled/test/fixtures/stories.yml
+END

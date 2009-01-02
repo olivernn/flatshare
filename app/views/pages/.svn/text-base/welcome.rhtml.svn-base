@@ -1,0 +1,23 @@
+<fieldset id='featured_adverts'>
+	<legend>Featured Adverts</legend>
+	<%= render :partial => 'featured_adverts' %>
+</fieldset>
+
+<div id='about_us_content'>
+	<%= @page.content %>
+</div>
+
+<div id='log_in'>
+<% form_tag :controller => 'user', :action => 'login' do %>
+	<fieldset class='welcome_form'>
+		<legend>Log in</legend>
+		<label for="email">Email</label>
+		<%= text_field_tag :email, params[:email] %>
+		<label for="password">Password</label>
+		<%= password_field_tag :password, params[:password] %><br/>
+		<div id="log_in_buttons"><%= button 'login'%>
+		<%= link_to icon('user_add', 'create account'), :controller => 'user', :action => 'add_user'%> 
+		<%= link_to icon ('key_go', 'reset your password'), :controller => 'user', :action => 'reset_password' %></div>
+	</fieldset>
+<% end %>
+</div>

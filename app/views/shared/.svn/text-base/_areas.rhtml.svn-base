@@ -1,0 +1,7 @@
+<ul class="areas">
+<% for area in @areas do -%>
+  <li class="area">
+    <div class="auto_complete_name"><%= area.value.strip %></div>
+  </li>
+<% end -%>
+</ul>

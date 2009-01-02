@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize
+END
+util.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/util.rb
+END
+file_saver.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/file_saver.rb
+END
+file.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/file.rb
+END
+monkey_patch.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/monkey_patch.rb
+END
+chain.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/chain.rb
+END
+redirect_limit_reached_error.rb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/redirect_limit_reached_error.rb
+END
+content_type_error.rb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/content_type_error.rb
+END
+unsupported_scheme_error.rb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/unsupported_scheme_error.rb
+END
+file_response.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/file_response.rb
+END
+pluggable_parsers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/pluggable_parsers.rb
+END
+history.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/history.rb
+END
+response_code_error.rb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/response_code_error.rb
+END
+form.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/form.rb
+END
+inspect.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/inspect.rb
+END
+cookie_jar.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/cookie_jar.rb
+END
+cookie.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/cookie.rb
+END
+list.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/list.rb
+END
+headers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/headers.rb
+END
+page.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/lib/www/mechanize/page.rb
+END

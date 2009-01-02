@@ -1,0 +1,3 @@
+<h3><%= place.name %></h3>
+<b>Category: </b><%= place.category %><br/>
+<%= place.description %>

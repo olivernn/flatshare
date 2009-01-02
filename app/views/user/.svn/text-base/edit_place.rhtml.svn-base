@@ -1,0 +1,5 @@
+<% form_tag :action => 'update_place', :id => @place.id do %>
+  <%= render :partial => 'place_form' %>
+<% end %>
+
+<%= link_to icon('house', 'back'), :action => 'index' %>

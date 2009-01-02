@@ -1,0 +1,32 @@
+
+	<div id="local_stations">
+		<h3>Local Stations</h3>
+		<table id="station_table">
+		
+			<tr>
+				<td>Wandsworth Road</td>
+				<td>0.5 miles away</td>
+			</tr>
+		
+			<tr>
+				<td>Battersea Park</td>
+				<td>0.5 miles away</td>
+			</tr>
+		
+			<tr>
+				<td>Queenstown Road (Battersea)</td>
+				<td>0.5 miles away</td>
+			</tr>
+		
+			<tr>
+				<td>Sloane Square</td>
+				<td>0.9 miles away</td>
+			</tr>
+		
+			<tr>
+				<td>Clapham High Street</td>
+				<td>1.0 miles away</td>
+			</tr>
+		
+		</table>
+	</div>

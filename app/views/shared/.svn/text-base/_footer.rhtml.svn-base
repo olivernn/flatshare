@@ -1,0 +1,11 @@
+<ul id="footer_list">
+	<li><%= link_to "Welcome", :controller => 'pages', :action => 'welcome' %></li>
+	<% cache 'footer' do %>
+		<% Page.get_footer.each do |footer| %>
+			<li><%= link_to footer.name, :controller => 'pages', :action => 'show_article', :id => footer%></li>
+		<% end %>
+	<% end %>
+	<li><%= link_to "Terms & Conditions", :controller => 'pages', :action => 'terms_and_conditions' %></li>
+	<li><%= link_to "Contact Us", :controller => 'pages', :action => 'contact_us' %></li>
+	<li><%= add_bookmark %></li>
+</ul>

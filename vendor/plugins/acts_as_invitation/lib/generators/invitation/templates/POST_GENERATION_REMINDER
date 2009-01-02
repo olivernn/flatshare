@@ -1,0 +1,6 @@
+
+That's it! Don't forget to:
+
+ * Configure your ActionMailer SMTP settings in your environment config files
+ * Change the <%= file_name %>.rhtml email view with your actual email text
+ * Include acts_as_invitation in your Invitation model

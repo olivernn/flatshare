@@ -1,0 +1,46 @@
+<%= error_messages_for :flatseeker, :object_name => "Advert", 
+								    :header_message => "Oops!  There were some errors on this form",
+								    :message => "Take a look at the following parts of the form"%>
+
+<!--[form:flatseeker]-->
+<fieldset id="flatseeker">
+	<legend>Details</legend>
+	<%= fieldset_help 'details_help' %>
+	
+	<label for="flatseeker_max_rent">Max rent</label>
+	<%= text_field_with_help 'flatseeker', 'rent', 'small_field', 'max_rent', 'details_help'  %><%= collection_select('flatseeker', 'rent_frequency', @frequency, "value", "value")%><br/>
+
+	<label for="flatseeker_date_available">Date available</label>
+	<%= date_select 'flatseeker', 'date_available'  %><br/>
+	
+	<label for="flatseeker_looking_as_couple">Couple</label>
+	<%= check_box 'flatseeker', 'couples'%><br/>
+
+	<label for="flatseeker_room_type">Room Type</label>
+	<%= collection_select('flatseeker', 'room_type', @room_type, 'value', 'value')%><br/>
+
+	<label for="flatseeker_furnished">Furnished Room</label>
+	<%= check_box 'flatseeker', 'furnished'%><br/>
+	
+	<label for="flatseeker_smoking">Smoker</label>
+	<%= check_box 'flatseeker', 'smoking' %><br/>
+
+	<label for="flatseeker_desired_location">Desired location</label>
+	<%= auto_complete_with_help 'flatseeker', 'area', 'medium_field', 'flatseeker_location', 'details_help'%>
+</fieldset>
+
+<fieldset id="flatseeker_description">
+	<legend>Descriptions</legend>
+	<%= fieldset_help 'descriptions_help' %>
+	
+	<label for="flatseeker_headline">Headline</label>
+	<%= text_field_with_help 'flatseeker', 'headline', 'large_field', 'headline', 'descriptions_help' %><br/>
+
+	<label for="flatseeker_description">Description</label>
+	<%= text_area_with_help 'flatseeker', 'description', 'medium_area', 'description', 'descriptions_help' %><br/>
+
+	<label for="flatseeker_interests">Interests</label>
+	<%= text_area_with_help 'flatseeker', 'interests', 'medium_area', 'interests', 'descriptions_help' %>
+</fieldset>
+<!--[eoform:flatseeker]-->
+

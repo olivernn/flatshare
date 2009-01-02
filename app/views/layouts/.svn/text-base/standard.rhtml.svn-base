@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title><%= yield(:title) || "The best place to advertise your flatshare" %> - London Flatmate</title>
+  <meta name="keywords" content="<%= yield(:keywords) || 'London, flatshare, flat share, flatsharing, flatseeker, flat seeker, room wanted, roommate, renting, sharing, flats, homes, houses, rental, bedsit, houseshare, house share, shared accommodation, rooms to let, room to let, room to rent, rooms to rent, flatmate, flat mate' %>"/>
+  <meta name="description" content="<%= yield(:description) || 'Find a flatshare or a flatmate fast!  Loads of accurate adverts for rooms and roommates in London makes us the best place to advertise your flatshare' %>"/>
+  <%= stylesheet_link_tag 'scaffold' %>
+  <%= stylesheet_link_tag 'my_styles' %>
+  <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag 'moo.fx.js' %>
+  <%= javascript_include_tag 'accordion' %>
+  <%= javascript_include_tag 'ufo' %>
+  <% if @map %>
+    <%= GMap.header(:local_search => true) %>
+  	<%= @map.to_html %>
+  <% end %> 
+</head>
+<body>
+<div id="container">
+	<div id="banner">
+		<h1><%= link_to image_tag('logo.png', :alt => 'London Flatmate', :title => 'London Flatmate'), {:controller => 'pages', :action => 'welcome'}, {:title => 'London Flatmate'}%></h1>
+		<%= tabnav :main %>
+		<img id='busy' class='busy' src='/images/ajax-loader.gif'/>
+	</div>
+
+	<%= render :partial => 'shared/flash' %>
+
+	<div id="wrapper">
+		<%= yield  %>
+	</div>
+	<div id="footer"><%= render :partial => 'shared/footer' %></div>
+</div>
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+	var pageTracker = _gat._getTracker("UA-6178997-1");
+	pageTracker._trackPageview();
+</script>
+</body>
+</html>

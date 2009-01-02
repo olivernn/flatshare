@@ -1,0 +1,11 @@
+<div id="payments_content"><%= @page.content %></div>
+
+<div id="payments_form"><% form_tag :action => 'promotion' do %>
+  <fieldset>
+	<br/>
+    <label for="promotion_code">Promotion Code</label>
+    <%= text_field "promotion", "code", :class => "medium_field" %>
+	<%= submit_tag "Ok" %>
+	<%= link_to image_tag('https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif'), :action => 'checkout'  %>
+  </fieldset>
+<% end %></div>

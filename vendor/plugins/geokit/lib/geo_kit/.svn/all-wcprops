@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/rails_projects/!svn/ver/1/flatshare/vendor/plugins/geokit/lib/geo_kit
+END
+acts_as_mappable.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/rails_projects/!svn/ver/1/flatshare/vendor/plugins/geokit/lib/geo_kit/acts_as_mappable.rb
+END
+mappable.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/rails_projects/!svn/ver/1/flatshare/vendor/plugins/geokit/lib/geo_kit/mappable.rb
+END
+ip_geocode_lookup.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/rails_projects/!svn/ver/1/flatshare/vendor/plugins/geokit/lib/geo_kit/ip_geocode_lookup.rb
+END
+defaults.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/rails_projects/!svn/ver/1/flatshare/vendor/plugins/geokit/lib/geo_kit/defaults.rb
+END
+geocoders.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/rails_projects/!svn/ver/1/flatshare/vendor/plugins/geokit/lib/geo_kit/geocoders.rb
+END

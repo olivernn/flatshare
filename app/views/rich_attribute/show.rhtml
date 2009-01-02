@@ -1,0 +1,8 @@
+<% for column in RichAttribute.content_columns %>
+<p>
+  <b><%= column.human_name %>:</b> <%=h @rich_attribute.send(column.name) %>
+</p>
+<% end %>
+
+<%= link_to 'Edit', :action => 'edit', :id => @rich_attribute %> |
+<%= link_to 'Back', :action => 'list' %>

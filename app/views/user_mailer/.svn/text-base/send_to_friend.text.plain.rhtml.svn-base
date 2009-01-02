@@ -1,0 +1,8 @@
+<%= @user.full_name %> thinks you would be interested in the following advert,
+
+<%= @advert.headline %>
+<%= @advert.description %>
+
+<%= @comment %>
+
+Take a closer look at the advert here <%= url_for(:controller => 'user', :action => 'view_advert', :id => @advert) %>

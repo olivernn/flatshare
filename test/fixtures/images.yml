@@ -1,0 +1,22 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+  my_first_image: 
+    content_type: "image/jpeg"
+    size: 40987
+    thumbnail: 
+    id: 28
+    height: 200
+    filename: "01010010.JPG"
+    parent_id: 
+    width: 278
+    advert_id: 11
+
+  my_other_image: 
+    content_type: "image/jpeg"
+    size: 40092
+    thumbnail: 
+    id: 30
+    height: 200
+    filename: "02010004.JPG"
+    parent_id:
+    width: 278
+    advert_id: 11

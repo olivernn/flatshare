@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/rails_projects/!svn/ver/1/flatshare/app/views/rich_attribute
+END
+list.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/rails_projects/!svn/ver/1/flatshare/app/views/rich_attribute/list.rhtml
+END
+show.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/rails_projects/!svn/ver/1/flatshare/app/views/rich_attribute/show.rhtml
+END
+_form.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/rails_projects/!svn/ver/28/flatshare/app/views/rich_attribute/_form.rhtml
+END
+edit.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/rails_projects/!svn/ver/1/flatshare/app/views/rich_attribute/edit.rhtml
+END
+new.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/rails_projects/!svn/ver/1/flatshare/app/views/rich_attribute/new.rhtml
+END

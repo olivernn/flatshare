@@ -1,0 +1,12 @@
+<h3>Local Travel</h3>
+<p>Check out the local transport links from this flatshare, enter the postcode of your work, your partners house or any where you travel to often to see what kind of journey you could have.</p>
+
+<div id="journey_details">
+<% form_remote_tag(:url => {:action => 'search_travel', :origin => @flatshare.postcode}, 
+							:update => 'journey_details',
+							:before => visual_effect(:fade, 'journey_details', :duration => 0.2),
+							:complete => visual_effect(:appear, 'journey_details', :duration => 0.2)) do %>
+	<%= text_field 'travel', 'destination', :class => 'medium_field' %>
+	<%= submit_tag 'Search' %>
+<% end %>
+</div>	

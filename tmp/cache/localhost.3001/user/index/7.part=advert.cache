@@ -1,0 +1,9 @@
+
+	<h2 class="title">Advert Controls</h2>
+	<div id="advert" class="expand">
+		
+			<p>You don't have an advert set up yet<br/>
+			<a href="/user/new_flatshare">Create Flatshare Advert</a> | 
+			<a href="/user/new_flatseeker">Create Flatseeker Advert</a></p>
+		
+	<br/></div>

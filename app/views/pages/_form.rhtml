@@ -1,0 +1,19 @@
+<%= error_messages_for 'page' %>
+
+<!--[form:page]-->
+<p><label for="page_name">Name</label><br/>
+<%= text_field 'page', 'name'  %></p>
+
+<p><label for="page_permalink">Permalink</label><br/>
+<%= text_field 'page', 'permalink'  %></p>
+
+<label for="page_help_page">Help Page?</label>
+<%= check_box 'page', 'help_page' %><br/>
+
+<label for="page_help_page">Footer Page?</label>
+<%= check_box 'page', 'footer_page' %><br/>
+
+<p><label for="page_content">Content</label><br/>
+<%= text_area 'page', 'content'  %></p>
+<!--[eoform:page]-->
+

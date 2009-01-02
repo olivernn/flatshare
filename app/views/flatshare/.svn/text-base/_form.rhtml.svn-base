@@ -1,0 +1,58 @@
+<%= error_messages_for :flatshare, :object_name => "Advert", 
+								   :header_message => "Oops! There were some errors on this form",
+								   :message => "Take a look at the following parts of the form"%>
+
+<!--[form:flatshare]-->
+<fieldset id="flatshare">
+	<legend>Details</legend>
+	<%= fieldset_help 'details_help' %>
+	
+	<label for="flatshare_rent">Rent</label>
+	<%= text_field_with_help 'flatshare', 'rent', 'small_field', 'rent', 'details_help' %><%= collection_select('flatshare', 'rent_frequency', @frequency, "value", "value")%><br/>
+		
+	<label for="flatshare_bills">Bills</label>
+	<%= text_field_with_help 'flatshare', 'bills', 'small_field', 'bills', 'details_help'%><%= collection_select('flatshare', 'bills_frequency', @frequency, "value", "value")%><br/>
+	
+	<label for="flatshare_deposit">Deposit</label>
+	<%= text_field_with_help 'flatshare', 'deposit', 'small_field', 'deposit', 'details_help'%><br/>
+	
+	<label for ="flatshare_area">Area</label>
+	<%= auto_complete_with_help 'flatshare', 'area', 'medium_field', 'flatshare_area', 'details_help'%><br/>
+
+	<label for="flatshare_postcode">Postcode</label>
+	<%= text_field_with_help 'flatshare', 'postcode', 'small_field', 'postcode', 'details_help'%><br/>
+
+	<label for="flatshare_date_available">Date available</label>
+	<%= date_select 'flatshare', 'date_available' %><br/>
+	
+	<label for="flatshare_room_type">Room Type</label>
+	<%= collection_select('flatshare', 'room_type', @room_type, 'value', 'value')%><br/>
+
+	<label for="flatshare_available_to_couples">Couples</label>
+	<%= check_box 'flatshare', 'couples' %><br/>
+	
+	<label for="flatshare_furnished">Furnished</label>
+	<%= check_box 'flatshare', 'furnished' %><br/>
+	
+	<label for="flatshare_smoking">Smoking</label>
+	<%= check_box 'flatshare', 'smoking'%>
+</fieldset>
+
+<fieldset id="flatshare_description">
+	<legend>Description</legend>
+	<%= fieldset_help 'descriptions_help' %>
+	
+	<label for="flatshare_headline">Headline</label>
+	<%= text_field_with_help 'flatshare', 'headline', 'large_field', 'headline', 'descriptions_help'%><br/>
+	
+	<label for="flatshare_housemates">Housemates</label>
+	<%= text_field_with_help 'flatshare', 'housemates', 'small_field', 'housemates', 'descriptions_help'%><br/>
+
+	<label for="flatshare_interests">Interests</label>
+	<%= text_area_with_help 'flatshare', 'interests', 'small_area', 'interests', 'descriptions_help' %><br/>
+	
+	<label for="flatshare_description">Description</label>
+	<%= text_area_with_help 'flatshare', 'description', 'medium_area', 'description', 'descriptions_help' %>
+</fieldset>
+<!--[eoform:flatshare]-->
+

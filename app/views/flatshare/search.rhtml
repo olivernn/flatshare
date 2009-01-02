@@ -1,0 +1,31 @@
+<% title "Search Flatshare Adverts" %>
+
+<div id="form_and_map">
+	<div id="search_form">
+	<% form_remote_tag(:url => {:action => 'list_flatshare'}, :html => {:id => 'flatshare_search_form', :method => 'get'}, :method => 'get') do %>
+	<fieldset id="search_criteria">
+		<legend>Search</legend>
+		<%= fieldset_help 'flatshare_search_help' %>
+		
+		<label for="flatshare_max_rent">Monthly Rent</label>
+		<%= text_field_with_help 'flatshare', 'max_rent', 'small_field', 'flatshare_search_rent', 'flatshare_search_help'%><br/>
+			
+		<label for="flatshare_area">Area</label>
+		<%= auto_complete_with_help 'flatshare', 'area', 'medium_field', 'flatshare_search_area', 'flatshare_search_help'%><br/>
+			
+		<label for="flatshare_distance">Within </label>
+		<%= collection_select('flatshare', 'distance', @distances, 'value', 'value')%><br/>
+		
+		<label for="flatshare_station">of</label>
+		<%= auto_complete_with_help 'flatshare', 'station', 'medium_field', 'flatshare_search_station', 'flatshare_search_help'%><br/>
+			
+		<%= button 'search' %>
+	</fieldset>
+	<% end %>
+	</div>
+	<div id='advert_display'><%= @search.content %></div>
+</div>
+<div id="map_and_local">
+	<div id="map_holder"><%= @map.div(:width => 500, :height => 500) %></div>
+	<div id="local_information"><%= @local_information.content %></div>
+</div>

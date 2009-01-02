@@ -1,0 +1,22 @@
+<div id="user_form">
+	<%= error_messages_for 'user'%>
+	<% form_tag :action => 'update_user' do %>
+	<fieldset>
+		<legend>Enter User Details</legend>
+		<%= fieldset_help 'user_help' %>	
+		<label for="user_first_name">First name</label>
+		<%= text_field 'user', 'first_name', :class => "medium_field"%>		
+			
+		<label for="user_second_name">Second name</label>
+		<%= text_field 'user', 'second_name', :class => "medium_field"%>
+					
+		<label for="user_email">Email address</label>
+		<%= text_field_with_help 'user', 'email', 'large_field', 'email', 'user_help'%>			
+			
+		<label for="user_contact_number">Contact number</label>
+		<%= text_field_with_help 'user', 'contact_number', 'medium_field', 'contact_number', 'user_help'%>
+
+		<br/><%= button "edit" %>
+	<% end %>
+	</fieldset>
+</div>

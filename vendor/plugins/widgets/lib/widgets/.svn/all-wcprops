@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/widgets/lib/widgets
+END
+navigation_item.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/widgets/lib/widgets/navigation_item.rb
+END
+table.css.erb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/widgets/lib/widgets/table.css.erb
+END
+css_template.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/widgets/lib/widgets/css_template.rb
+END
+table_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/widgets/lib/widgets/table_helper.rb
+END
+tooltip.css.erb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/widgets/lib/widgets/tooltip.css.erb
+END
+disableable.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/widgets/lib/widgets/disableable.rb
+END
+core.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/widgets/lib/widgets/core.rb
+END
+tooltip_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/widgets/lib/widgets/tooltip_helper.rb
+END
+navigation.css.erb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/widgets/lib/widgets/navigation.css.erb
+END
+highlightable.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/widgets/lib/widgets/highlightable.rb
+END
+navigation_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/widgets/lib/widgets/navigation_helper.rb
+END
+navigation.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/widgets/lib/widgets/navigation.rb
+END
+tab.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/widgets/lib/widgets/tab.rb
+END
+code.css.erb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/widgets/lib/widgets/code.css.erb
+END
+tabnav.css.erb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/widgets/lib/widgets/tabnav.css.erb
+END
+showhide_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/widgets/lib/widgets/showhide_helper.rb
+END
+code_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/widgets/lib/widgets/code_helper.rb
+END
+tabnav_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/widgets/lib/widgets/tabnav_helper.rb
+END
+tabnav.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/widgets/lib/widgets/tabnav.rb
+END

@@ -1,0 +1,100 @@
+9
+
+dir
+12
+http://ONightin@onightin.svn.beanstalkapp.com/rails_projects/flatshare/vendor/plugins/acts_as_favorite
+http://ONightin@onightin.svn.beanstalkapp.com/rails_projects
+
+
+
+2008-07-29T17:59:19.852028Z
+12
+ONightin
+
+
+svn:special svn:externals svn:needs-lock
+
+test
+dir
+
+Rakefile
+file
+
+
+
+
+2008-07-12T12:32:50.000000Z
+943212a7a188a49de795f2e7130efddf
+2008-07-29T17:59:19.852028Z
+12
+ONightin
+
+init.rb
+file
+
+
+
+
+2008-07-12T12:32:53.000000Z
+c5e9058162bd3799008ec0ffc2a9ed72
+2008-07-29T17:59:19.852028Z
+12
+ONightin
+
+tasks
+dir
+
+lib
+dir
+
+install.rb
+file
+
+
+
+
+2008-07-12T12:32:54.000000Z
+3773dce53854a282602d79a631a1ff8a
+2008-07-29T17:59:19.852028Z
+12
+ONightin
+
+generators
+dir
+
+MIT-LICENSE
+file
+
+
+
+
+2008-07-12T12:32:50.000000Z
+958f2bb0a0c396fe44deb8f1a139248f
+2008-07-29T17:59:19.852028Z
+12
+ONightin
+
+about.yml
+file
+
+
+
+
+2008-07-12T12:32:50.000000Z
+5a79db50d851330644d4dd27f104a9d8
+2008-07-29T17:59:19.852028Z
+12
+ONightin
+
+README
+file
+
+
+
+
+2008-07-12T12:32:50.000000Z
+40c62aa02260ac20d8c951d8f59c6b17
+2008-07-29T17:59:19.852028Z
+12
+ONightin
+

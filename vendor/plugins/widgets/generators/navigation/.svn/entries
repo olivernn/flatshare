@@ -1,0 +1,43 @@
+9
+
+dir
+12
+http://ONightin@onightin.svn.beanstalkapp.com/rails_projects/flatshare/vendor/plugins/widgets/generators/navigation
+http://ONightin@onightin.svn.beanstalkapp.com/rails_projects
+
+
+
+2008-07-29T17:59:19.852028Z
+12
+ONightin
+
+
+svn:special svn:externals svn:needs-lock
+
+USAGE
+file
+
+
+
+
+2008-06-29T18:52:42.000000Z
+02402668816e8993e60c99ac0c827158
+2008-07-29T17:59:19.852028Z
+12
+ONightin
+
+navigation_generator.rb
+file
+
+
+
+
+2008-06-29T18:52:42.000000Z
+5984d8510dcf9fd9d245fbacc003049b
+2008-07-29T17:59:19.852028Z
+12
+ONightin
+
+templates
+dir
+

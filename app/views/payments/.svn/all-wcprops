@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/rails_projects/!svn/ver/18/flatshare/app/views/payments
+END
+confirm.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/rails_projects/!svn/ver/22/flatshare/app/views/payments/confirm.rhtml
+END
+index.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/rails_projects/!svn/ver/22/flatshare/app/views/payments/index.rhtml
+END
+complete.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/rails_projects/!svn/ver/18/flatshare/app/views/payments/complete.rhtml
+END
+error.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/rails_projects/!svn/ver/22/flatshare/app/views/payments/error.rhtml
+END

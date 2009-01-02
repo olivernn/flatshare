@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/rails_projects/!svn/ver/17/flatshare/vendor/plugins/active_merchant/test/remote/integrations
+END
+remote_paypal_integration_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/rails_projects/!svn/ver/17/flatshare/vendor/plugins/active_merchant/test/remote/integrations/remote_paypal_integration_test.rb
+END
+remote_gestpay_integration_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/rails_projects/!svn/ver/17/flatshare/vendor/plugins/active_merchant/test/remote/integrations/remote_gestpay_integration_test.rb
+END

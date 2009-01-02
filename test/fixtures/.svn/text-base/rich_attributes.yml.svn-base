@@ -1,0 +1,18 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+  terrarce: 
+    name: "Terrarce"
+    rich_attribute_id: 13
+    id: 13
+    advert_id: 22
+
+  wireless_broadband: 
+    name: "Wireless Broadband"
+    rich_attribute_id: 7
+    id: 7
+    advert_id: 22
+
+  cleaner: 
+    name: "Cleaner"
+    rich_attribute_id: 14
+    id: 14
+    advert_id: 22

@@ -1,0 +1,9 @@
+<% if flash[:notice] %>
+	<div id='flash' class='flash_notice'><%= flash[:notice] %></div>
+<% elsif flash[:warning] %>
+	<div id='flash' class='flash_warning'><%= flash[:warning] %></div>
+<% elsif flash[:message] %>
+	<div id='flash' class='flash_message'><%= flash[:message] %></div>
+<% else %>
+	<div id='flash'></div>
+<% end %>

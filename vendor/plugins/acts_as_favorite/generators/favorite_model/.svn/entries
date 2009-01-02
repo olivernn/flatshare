@@ -1,0 +1,43 @@
+9
+
+dir
+12
+http://ONightin@onightin.svn.beanstalkapp.com/rails_projects/flatshare/vendor/plugins/acts_as_favorite/generators/favorite_model
+http://ONightin@onightin.svn.beanstalkapp.com/rails_projects
+
+
+
+2008-07-29T17:59:19.852028Z
+12
+ONightin
+
+
+svn:special svn:externals svn:needs-lock
+
+USAGE
+file
+
+
+
+
+2008-07-12T12:32:51.000000Z
+c576f5fe22c4fef2235ceaee2712dc0b
+2008-07-29T17:59:19.852028Z
+12
+ONightin
+
+favorite_model_generator.rb
+file
+
+
+
+
+2008-07-12T12:32:52.000000Z
+8e02efed351058a119c5988d60783931
+2008-07-29T17:59:19.852028Z
+12
+ONightin
+
+templates
+dir
+

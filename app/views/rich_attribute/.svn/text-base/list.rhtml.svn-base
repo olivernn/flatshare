@@ -1,0 +1,27 @@
+<h1>Listing rich_attributes</h1>
+
+<table>
+  <tr>
+  <% for column in RichAttribute.content_columns %>
+    <th><%= column.human_name %></th>
+  <% end %>
+  </tr>
+  
+<% for rich_attribute in @rich_attributes %>
+  <tr>
+  <% for column in RichAttribute.content_columns %>
+    <td><%=h rich_attribute.send(column.name) %></td>
+  <% end %>
+    <td><%= link_to 'Show', :action => 'show', :id => rich_attribute %></td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => rich_attribute %></td>
+    <td><%= link_to 'Destroy', { :action => 'destroy', :id => rich_attribute }, :confirm => 'Are you sure?', :method => :post %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Previous page', { :page => @rich_attribute_pages.current.previous } if @rich_attribute_pages.current.previous %>
+<%= link_to 'Next page', { :page => @rich_attribute_pages.current.next } if @rich_attribute_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New rich_attribute', :action => 'new' %>

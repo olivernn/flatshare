@@ -1,0 +1,18 @@
+<div id="confirm_details">
+<table id="confirm_details_table">
+  <caption>Your address details</caption>
+  <tr><td class="confirm_title">Name</td><td><%= @address['name'] %></td></tr>
+  <tr><td class="confirm_title">Company</td><td><%= @address['company'] %></td></tr>
+  <tr><td class="confirm_title">Address 1</td><td><%= @address['address1'] %></td></tr>
+  <tr><td class="confirm_title">Address 2</td><td><%= @address['address2'] %></td></tr>
+  <tr><td class="confirm_title">City</td><td><%= @address['city'] %></td></tr>
+  <tr><td class="confirm_title">State</td><td><%= @address['state'] %></td></tr>
+  <tr><td class="confirm_title">Country</td><td><%= @address['country'] %></td></tr>
+  <tr><td class="confirm_title">Zip</td><td><%= @address['zip'] %></td></tr>
+</table>
+
+<p><% form_tag :action => 'complete', :token => params[:token], :payer_id => params[:PayerID] do %>
+  <%= submit_tag 'Complete Payment' %>
+<% end %></p></div>
+
+<div id="confirm_content"><%= @page.content %></div>

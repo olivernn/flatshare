@@ -1,0 +1,36 @@
+<% form_remote_tag(:url => {:action => 'search_travel', :origin => @journey.origin}, 
+							:update => 'journey_details',
+							:before => visual_effect(:fade, 'journey_details', :duration => 0.2),
+							:complete => visual_effect(:appear, 'journey_details', :duration => 0.2)) do %>
+	<%= text_field 'travel', 'destination', :class => 'medium_field', :value => @journey.destination %>
+	<%= submit_tag 'Search' %>
+<% end %>
+<br/>
+<% if @journey.success %>
+  <% unless @journey.destination.empty? || @journey.legs.empty? %>
+  	<table id="travel_details">
+		<tr>
+			<td class='right_align'><b>Origin</b></td>
+			<td><%= @journey.origin %></td>
+		</tr>
+		<tr>
+			<td class='right_align'><b>Destination</b></td>
+			<td><%= @journey.destination %></td>
+		</tr>
+		<tr>
+			<td class='right_align'><b>Duration</b></td>
+			<td><%= @journey.duration %></td>
+		</tr>
+	</table>
+		
+	<ol>
+	<% @journey.legs.each do |leg| %>
+		<li><%= leg %></li>
+	<% end %>
+	</ol>
+  <% else %>
+	<p>Please enter a valid London postcode</p>
+  <% end %>
+<% else %>
+  <p>We can't seem to get any journey details at the moment, try again later</p>
+<% end %>

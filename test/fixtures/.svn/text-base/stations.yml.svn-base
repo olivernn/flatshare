@@ -1,0 +1,14 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+clapham_junction: 
+  name: "Clapham Junction"
+  postcode: "SW11 2HT"
+  lng: -0.1726579964
+  id: 469
+  lat: 51.4662132263
+  
+euston: 
+    name: "Euston"
+    postcode: "NW1 2RS"
+    lng: -0.1299580038
+    id: 88
+    lat: 51.5280113220

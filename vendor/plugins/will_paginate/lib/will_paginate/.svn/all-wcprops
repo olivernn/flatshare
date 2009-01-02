@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/rails_projects/!svn/ver/18/flatshare/vendor/plugins/will_paginate/lib/will_paginate
+END
+finder.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/rails_projects/!svn/ver/18/flatshare/vendor/plugins/will_paginate/lib/will_paginate/finder.rb
+END
+core_ext.rb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/rails_projects/!svn/ver/18/flatshare/vendor/plugins/will_paginate/lib/will_paginate/core_ext.rb
+END
+collection.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/rails_projects/!svn/ver/18/flatshare/vendor/plugins/will_paginate/lib/will_paginate/collection.rb
+END
+view_helpers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/rails_projects/!svn/ver/53/flatshare/vendor/plugins/will_paginate/lib/will_paginate/view_helpers.rb
+END

@@ -1,0 +1,6 @@
+<%= render :partial => 'advert'%>
+<br/>
+<div id="controls">
+	<%= advert_controls(@flatshare) %>
+</div>
+<div id="form_holder"></div>

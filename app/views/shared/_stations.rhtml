@@ -1,0 +1,7 @@
+<ul class="stations">
+<% for station in @stations do -%>
+  <li class="station">
+    <div class="auto_complete_name"><%= station.name.strip %></div>
+  </li>
+<% end -%>
+</ul>

@@ -1,0 +1,11 @@
+<h1>Editing flatshare</h1>
+<div id="form">
+	<% form_tag :action => 'update', :id => @flatshare do %>
+  		<%= render :partial => 'form' %>
+  		<%= render :partial => 'rich_attribute/form'%>
+  		<%= submit_tag 'Edit' %>
+	<% end %>
+</div>
+
+<%= link_to 'Show', :action => 'show', :id => @flatshare %> |
+<%= link_to 'Back', :action => 'list' %>

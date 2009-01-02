@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/acts_as_favorite/generators/favorite_model/templates
+END
+unit_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/acts_as_favorite/generators/favorite_model/templates/unit_test.rb
+END
+model.rb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/acts_as_favorite/generators/favorite_model/templates/model.rb
+END
+fixtures.yml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/acts_as_favorite/generators/favorite_model/templates/fixtures.yml
+END
+migration.rb
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/acts_as_favorite/generators/favorite_model/templates/migration.rb
+END

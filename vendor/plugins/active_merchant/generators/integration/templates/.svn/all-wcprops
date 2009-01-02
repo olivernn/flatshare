@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/rails_projects/!svn/ver/17/flatshare/vendor/plugins/active_merchant/generators/integration/templates
+END
+helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/rails_projects/!svn/ver/17/flatshare/vendor/plugins/active_merchant/generators/integration/templates/helper_test.rb
+END
+helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/rails_projects/!svn/ver/17/flatshare/vendor/plugins/active_merchant/generators/integration/templates/helper.rb
+END
+integration.rb
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/rails_projects/!svn/ver/17/flatshare/vendor/plugins/active_merchant/generators/integration/templates/integration.rb
+END
+module_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/rails_projects/!svn/ver/17/flatshare/vendor/plugins/active_merchant/generators/integration/templates/module_test.rb
+END
+notification_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/rails_projects/!svn/ver/17/flatshare/vendor/plugins/active_merchant/generators/integration/templates/notification_test.rb
+END
+notification.rb
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/rails_projects/!svn/ver/17/flatshare/vendor/plugins/active_merchant/generators/integration/templates/notification.rb
+END

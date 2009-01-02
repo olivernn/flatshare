@@ -1,0 +1,40 @@
+xml.instruct!
+xml.urlset "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9" do
+
+  unless @adverts.empty?
+    @adverts.each do |advert|
+      xml.url  do
+        xml.loc url_for(:controller => 'user', 
+                        :action => 'view_advert', 
+                        :id => advert,
+                        :only_path => false)
+        xml.lastmod advert.created_at.to_date
+      end
+    end
+  end
+  
+  @pages.each do |page|
+    xml.url do
+      xml.loc url_for(:controller => 'pages',
+                      :action => 'show_article',
+                      :id => page,
+                      :only_path => false)
+    end
+  end
+  
+  xml.url do
+    xml.loc url_for(:controller => 'flatshare', :action => 'search', :only_path => false)
+  end
+  
+  xml.url do
+    xml.loc url_for(:controller => 'flatseekers', :action => 'search', :only_path => false)
+  end
+  
+  xml.url do
+    xml.loc url_for(:controller => 'pages', :action => 'welcome', :only_path => false)
+  end
+  
+  xml.url do
+    xml.loc url_for(:only_path => false)
+  end
+end

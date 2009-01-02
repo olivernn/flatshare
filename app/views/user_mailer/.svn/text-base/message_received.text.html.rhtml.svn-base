@@ -1,0 +1,7 @@
+<p>Dear <%= @user.full_name %>,</p>
+
+<p><%= @sender.full_name %> sent you the following message...</p>
+
+<p>You can reply to <%= @sender.full_name %> by logging into your account here http://londonflatmate.net/user/show_messages</p>
+
+<p><%= @message.message %></p>

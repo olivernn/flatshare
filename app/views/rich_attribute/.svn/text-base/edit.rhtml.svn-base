@@ -1,0 +1,9 @@
+<h1>Editing rich_attribute</h1>
+
+<% form_tag :action => 'update', :id => @rich_attribute do %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag 'Edit' %>
+<% end %>
+
+<%= link_to 'Show', :action => 'show', :id => @rich_attribute %> |
+<%= link_to 'Back', :action => 'list' %>

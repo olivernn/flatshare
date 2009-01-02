@@ -1,0 +1,3 @@
+page.replace_html("message_form", :partial => "shared/send_message")
+page[:message_from_id].value = @user.id
+page[:message_user_id].value = @flatshare.user_id

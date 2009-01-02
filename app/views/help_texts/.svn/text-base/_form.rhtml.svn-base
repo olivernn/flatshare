@@ -1,0 +1,10 @@
+<%= error_messages_for 'help_text' %>
+
+<!--[form:help_text]-->
+<p><label for="help_text_name">Name</label><br/>
+<%= text_field 'help_text', 'name'  %></p>
+
+<p><label for="help_text_help_text">Help text</label><br/>
+<%= text_field 'help_text', 'help_text'  %></p>
+<!--[eoform:help_text]-->
+

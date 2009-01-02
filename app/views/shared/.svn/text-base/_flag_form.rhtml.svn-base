@@ -1,0 +1,15 @@
+<%= error_messages_for(:flag) %>
+<% form_remote_tag (:url => {:controller => 'flag', :action => 'add_flag'}, :html => {:id => 'flag_form'}) do%>
+<fieldset id="create_flag">
+	<legend>Flag Advert</legend>
+	<label for="flag_flag_type">Type</label>
+	<%= collection_select('flag', 'flag_type', @flag_type, 'value', 'value')%>
+	
+	<label for="flag_flag_comment">Your Message</label>
+	<%= text_area 'flag', 'flag_comment', :class => 'medium_area'%>
+	
+	<%= hidden_field 'flag', 'user_id'%>
+	<%= hidden_field 'flag', 'advert_id'%>
+	<%= button 'add'%>
+</fieldset>	
+<% end %>

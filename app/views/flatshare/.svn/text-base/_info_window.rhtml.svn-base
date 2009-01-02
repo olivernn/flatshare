@@ -1,0 +1,19 @@
+ <h3><%= link_to_remote advert.headline,
+		:url => {:controller => 'flatshare', :action => 'view_advert', :id => advert },
+		:method => :get,
+		:before => visual_effect(:fade, 'advert_display', :duration => 0.2),
+		:complete => visual_effect(:appear, 'advert_display', :duration => 0.2) %>
+		
+	 <%= is_new_advert(advert.created_at) %> 
+	 <%= has_pictures(advert.images) %>
+	
+	 <%= link_to_remote icon('information','advert details'),
+		:url => {:controller => 'flatshare', :action => 'view_advert', :id => advert.id }, 
+		:method => :get,
+		:before => visual_effect(:fade, 'advert_display', :duration => 0.2),
+		:complete => visual_effect(:appear, 'advert_display', :duration => 0.2) %></h3>
+		
+ <p>Advert is <%=time_ago_in_words(advert.created_at)%> old <br/>
+ <b>Rent: </b><%= number_to_currency(advert.rent, :precisioin => 2, :unit => '£') %> per month<br/>
+ <b>Bills: </b><%= number_to_currency(advert.bills, :precisioin => 2, :unit => '£') %> per month<br/>
+<%= truncate(advert.description,60) %><br/></p>

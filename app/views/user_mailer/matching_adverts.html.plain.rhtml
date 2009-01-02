@@ -1,0 +1,18 @@
+<p>Dear <%= @user.full_name %>,</p>
+
+<p>We've been hunting through the adverts on LondonFlatmate.net and we thought you might be interested in these...</p>
+
+<table>
+<% @adverts.each do |advert| %>
+  <tr>
+	<td><%= advert.headline %></td>
+	<td><%= advert.description %></td>
+	<td>Monthly Rent: <%= advert.rent %></td>
+	<td><%= url_for(:controller => 'user', :action => 'view_advert', :id => advert) %></td>
+  </tr>
+<% end %>
+</table>
+
+<p>Click on the links to get more information about the advert or log into your account here http://LondonFlatmate.net/user</p>
+
+<p>LondonFlatmate.net</p>

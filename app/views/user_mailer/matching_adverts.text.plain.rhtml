@@ -1,0 +1,14 @@
+Dear <%= @user.full_name %>,
+
+We've been hunting through the adverts on LondonFlatmate.net and we thought you might be interested in these...
+
+<% @adverts.each do |advert| %>
+	<%= advert.headline %>
+	<%= advert.description.gsub!(/<\/?[^>]*>/, "") %>
+	Rent: <%= advert.rent %>
+	<%= url_for(:controller => 'user', :action => 'view_advert', :id => advert) %>
+<% end %>
+
+Click on the links to get more information about the advert or log into your account here http://LondonFlatmate.net/user
+
+LondonFlatmate.net

@@ -1,0 +1,10 @@
+<h1>Editing flatseeker</h1>
+
+<% form_tag :action => 'update', :id => @flatseeker do %>
+  <%= render :partial => 'form' %>
+  <%= render :partial => 'rich_attribute/form'%>
+  <%= submit_tag 'Edit' %>
+<% end %>
+
+<%= link_to 'Show', :action => 'show', :id => @flatseeker %> |
+<%= link_to 'Back', :action => 'list' %>

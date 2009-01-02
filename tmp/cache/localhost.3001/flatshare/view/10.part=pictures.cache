@@ -1,0 +1,12 @@
+
+	
+		<div id="pictures">
+			<h3>Pictures</h3>
+			<div id="flash_player_container">You must enable JavaScript and install the <a href='http://www.flash.com'>Flash</a> plugin to view this player</div><script type="text/javascript">
+//<![CDATA[
+UFO.create({build:"0", movie:"/swf/imagerotator.swf", flashvars:"transition=bgfade&enablejs=true&file=http%3A%2F%2Flondonflatmate.net%2Fuser%2Fslideshow_images%2F10&width=300&showicons=true&shownavigation=true&height=300", width:"300", height:"300", majorversion:"8", id:"flash_player", allowscriptaccess:"always"}, "flash_player_container");
+//]]>
+</script>
+
+		</div>
+	

@@ -1,0 +1,2 @@
+<h1>Oops!</h1>
+<p>Unfortunately an error occurred: <%= @message %> <%= link_to "go back", :controller => 'user', :action => 'index' %></p>

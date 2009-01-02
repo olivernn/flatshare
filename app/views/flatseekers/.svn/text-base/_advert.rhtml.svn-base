@@ -1,0 +1,38 @@
+	<h1><%= @flatseeker.headline %></h1>
+	<div id="bills_rent_monthly">
+		<b>Rent: </b><%= number_to_currency(@flatseeker.rent, :precision => 2, :unit => '£') %> per month<br/>
+	</div>
+	<div id="description">
+		<% if @flatseeker.interests? %>
+			<b>I have the following interests </b><%= @flatseeker.interests %><br/>
+		<% end %>
+		<p><%= @flatseeker.description %></p>
+		<b>I'm available from </b><%= @flatseeker.date_available %><br/>
+		<p>I would like a <%= @flatseeker.room_type %> size room</p>
+		<p>Advert is <%= time_ago_in_words(@flatseeker.created_at)%> old</p>
+	</div>
+	
+	<% cache(:action => 'view', :part => 'rich_attr', :id => @flatseeker.id ) do %>
+		<% unless @flatseeker.rich_attributes.empty? %>
+			<div id="flatshare_attributes">
+				<b>The tenant is looking for...</b>
+				<% @flatseeker.rich_attributes.each do |attribute| %>
+					<br/><%= attribute.name %>
+				<% end %>
+			</div>
+		<% end %>
+	<% end %>
+	
+	<% cache(:action => 'view', :part => 'pictures', :id => @flatseeker.id) do %>
+		<% unless @flatseeker.images.empty? %>
+			<div id="pictures">
+				<h3>Pictures</h3>
+				<%= render :partial => 'shared/slideshow', :locals => {:advert => @flatseeker} %>
+			</div>
+		<% end %>
+	<% end %>
+	
+	<br/>
+	<%= advert_controls(@flatseeker) %>
+</div>
+

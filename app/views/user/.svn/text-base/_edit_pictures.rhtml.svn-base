@@ -1,0 +1,7 @@
+<legend>Manage Photos</legend>
+<% pictures.each do |picture|%>
+	<img class="picture"src="<%= url_for(:action => 'show_picture', :id => picture.id) %>"/>
+	<%= link_to_remote icon('picture_delete', 'delete picture'), :url => {:action => 'delete_picture', :id => picture.id},
+																 :confirm => "Are you sure you want to delete this photo?",
+																 :update => 'pictures'%>
+<% end %>

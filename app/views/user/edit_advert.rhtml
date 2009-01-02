@@ -1,0 +1,19 @@
+<div id="advert_edit_form">
+	<% form_tag :action => 'update_advert', :id => @advert do %>
+		<%= show_advert(@advert, "edit") %>
+		<% cache(:action => 'edit_advert', :part => 'pictures', :id => @advert.id) do %>
+			<% unless @advert.images.empty? %>
+				<fieldset id="pictures">
+					<%= render :partial => 'image/edit_pictures', :locals => {:images => @advert.images}%>
+				</fieldset>
+			<% end%>
+		<% end %>
+		<%= render :partial => 'edit_rich_attributes', :locals => {:attributes => @rich_attributes} %>
+   		<%= button 'edit' %>
+	<% end %>
+</div>
+<div id="form_holder"></div>
+<div id="controls">
+<%= link_to_remote icon('picture_add', 'add picture'), :url => {:controller => 'image', :action => 'new', :id => @advert}, :update => 'form_holder', :complete => visual_effect(:blind_down) %> |
+<%= link_to icon('house', 'home'), :action => 'index' %>
+</div>

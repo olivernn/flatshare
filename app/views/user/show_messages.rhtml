@@ -1,0 +1,29 @@
+<div id="message_list">
+	
+	<table id="message_table">
+		<tr>
+			<th/>
+			<th>From</th>
+			<th>Sent</th>
+			<th>Subject</th>
+		</tr>
+		<% @messages.each do |message| %>
+			<% unless message.read %>
+				<tr class="unread" id="message_<%= message.id %>">
+			<% else %>
+				<tr id="message_<%= message.id %>">
+			<% end %>
+					<td><%= show_message_link message_status(message), message %></td>
+					<td><%= show_message_link message.senders_name, message %></td>
+					<td><%= time_ago_in_words(message.created_at) %> ago</td>
+					<td><%= show_message_link message.subject, message%></td>
+					<td><%= link_to_remote icon('email_delete', 'delete message'), :url => {:action => "delete_message", :id => message.id},
+																				   :confirm => 'Are you sure you want to delete this message?'%></td>
+				</tr>
+		<% end %>
+	</table>
+	<%= will_paginate @messages %>
+</div>
+
+<div id="message_view"></div>
+

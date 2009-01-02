@@ -1,0 +1,22 @@
+<% title "Search Flatseeker Adverts" %>
+
+<div id="search_and_table">
+	<div id="flatseeker_search_form">
+	<% form_remote_tag(:url => {:action => 'list'}, :html => {:id => 'flatseeker_search_form', :method => 'get'}, :method => 'get') do %>
+		<fieldset id="search_criteria">
+			<legend>Search</legend>
+			<%= fieldset_help 'flatseeker_search_help' %>
+			
+			<label for="flatseeker_max_rent">Monthly Rent</label>
+			<%= text_field_with_help "flatseeker", "rent", "small_field", "flatseeker_search_rent", "flatseeker_search_help"  %><br/>
+						
+			<label for="flatseeker_area">Area</label>
+			<%= auto_complete_with_help 'flatseeker', 'area', 'medium_field', 'flatseeker_search_area', 'flatseeker_search_help'%><br/>
+			
+			<%= button 'search' %>
+		</fieldset>
+	<% end %>
+	</div>
+	<div id="flatseeker_search_results"></div>
+</div>
+<div id="flatseeker_advert_display"><%= @page.content %></div>

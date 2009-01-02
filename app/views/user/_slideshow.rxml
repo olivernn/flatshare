@@ -1,0 +1,9 @@
+xml.playlist(:version => "1", :xmlns => "http://xspf.org/ns/0/") do
+  xml.trackList do
+    @images.each do |image|
+      xml.track do
+        xml.location(image.public_filename)
+      end
+    end
+  end
+end

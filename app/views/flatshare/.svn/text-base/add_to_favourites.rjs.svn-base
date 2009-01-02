@@ -1,0 +1,2 @@
+page['flash'].replace :partial => 'shared/flash'
+page.visual_effect(:highlight, "advert_display", :duration => 0.2)

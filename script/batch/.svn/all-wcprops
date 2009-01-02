@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/rails_projects/!svn/ver/54/flatshare/script/batch
+END
+clear_stale_sessions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/rails_projects/!svn/ver/63/flatshare/script/batch/clear_stale_sessions.rb
+END
+refresh_welccome.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/rails_projects/!svn/ver/54/flatshare/script/batch/refresh_welccome.rb
+END

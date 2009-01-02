@@ -1,0 +1,8 @@
+<% for column in Station.content_columns %>
+<p>
+  <b><%= column.human_name %>:</b> <%=h @station.send(column.name) %>
+</p>
+<% end %>
+
+<%= link_to 'Edit', :action => 'edit', :id => @station %> |
+<%= link_to 'Back', :action => 'list' %>

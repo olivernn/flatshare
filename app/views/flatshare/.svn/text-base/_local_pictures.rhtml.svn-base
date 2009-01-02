@@ -1,0 +1,15 @@
+<h3>Local Pictures</h3>
+<p>show photos from <a href="http://www.flickr.com">Flickr</a> that were taken within one kilometer from this advert, use it to gain an idea of what is in the area.  As this is coming straight from <a href="http://www.flickr.com">Flickr</a> we can't promoise that you won't just get a picture of someones dog!</p>
+
+<div id="flickr_form">
+	<% form_remote_tag(:url => {:action => 'search_flickr', :id => @flatshare}, 
+								:update => 'slideshow_holder',
+								:loading => "spin_div('slideshow_holder');",
+								:before => visual_effect(:fade, 'slideshow_holder', :duration => 0.2),
+								:complete => visual_effect(:appear, 'slideshow_holder', :duration => 0.2)) do %>
+		<%= text_field 'flickr', 'tags', :class => 'medium_field' %>
+		<%= submit_tag 'Search' %>
+	<% end %>
+</div>
+
+<div id="slideshow_holder"></div>

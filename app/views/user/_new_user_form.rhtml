@@ -1,0 +1,27 @@
+<%= error_messages_for 'user' %>
+<% form_tag :action => 'add_user' do |form|%>
+<fieldset>
+	<legend>Enter User Details</legend>
+	<%= fieldset_help 'user_help' %>
+	<label for="user_first_name">First name:</label>
+	<%= text_field 'user', 'first_name', :class => "medium_field"%><br/>
+
+	<label for="user_second_name">Second name:</label>
+	<%= text_field 'user', 'second_name', :class => "medium_field"%><br/>
+
+	<label for="user_email">Email address:</label>
+	<%= text_field_with_help 'user', 'email', 'large_field', 'email', 'user_help'%><br/>
+
+	<label for="user_contact_number">Contact number:</label>
+	<%= text_field_with_help 'user', 'contact_number', 'medium_field', 'contact_number', 'user_help'%><br/>
+
+	<label for="user_password">Password:</label>
+	<%= password_field_with_help 'user', 'password', 'medium_field', 'password', 'user_help' %><br/>
+
+	<label for="user_password_confirmation">Confirm:</label>
+	<%= password_field_with_help 'user', 'password_confirmation', 'medium_field', 'password_confirmation', 'user_help' %><br/>
+
+	<br/><%= button('create') %>
+	<p class="toc">I accept the <%= link_to "terms and conditions", :controller => 'pages', :action => 'terms_and_conditions' %> <%= check_box 'user', 'terms_and_conditions' %></p>
+<% end %>
+</fieldset>

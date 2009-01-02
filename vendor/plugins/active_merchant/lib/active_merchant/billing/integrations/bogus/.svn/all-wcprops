@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/rails_projects/!svn/ver/17/flatshare/vendor/plugins/active_merchant/lib/active_merchant/billing/integrations/bogus
+END
+helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/rails_projects/!svn/ver/17/flatshare/vendor/plugins/active_merchant/lib/active_merchant/billing/integrations/bogus/helper.rb
+END
+return.rb
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/rails_projects/!svn/ver/17/flatshare/vendor/plugins/active_merchant/lib/active_merchant/billing/integrations/bogus/return.rb
+END
+notification.rb
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/rails_projects/!svn/ver/17/flatshare/vendor/plugins/active_merchant/lib/active_merchant/billing/integrations/bogus/notification.rb
+END

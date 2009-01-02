@@ -1,0 +1,12 @@
+<% form_remote_tag (:url => {:controller => 'user', :action => 'send_to_friend', :object => advert }, :html => {:id => 'send_to_friend_form'}) do%>
+<fieldset id="send_to_friend">
+	<legend>Send To Friend</legend>
+	<label for="user_friend_email">Friends Email</label>
+	<%= text_field 'user', 'friend_email', :class => 'medium_field'%>
+	
+	<label for="user_comment">Comment</label>
+	<%= text_area 'user', 'comment', :class => 'small_area'%>
+
+	<%= submit_tag 'Send'%>
+</fieldset>	
+<% end %>

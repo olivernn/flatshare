@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+oliver:
+    salt: "277347400.852249174328087"
+    second_name: "Nightingale"
+    contact_number: 07811140700
+    hashed_password: "837d88ae20064fb90a071440edc7dbf964d32d19"
+    id: 1
+    authority: 9
+    first_name: "Oliver"
+    email: "oliver@mail.com"
+
+kaite: 
+  salt: "270807500.561499305826533"
+  second_name: "Cole"
+  contact_number: 07817315852
+  hashed_password: "4126d05c958372875317a5cab1b08b875c1b53f7"
+  id: 2
+  authority: 1
+  first_name: "Kathryn"
+  email: "katie@mail.com"
+

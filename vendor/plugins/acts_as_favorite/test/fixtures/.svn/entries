@@ -1,0 +1,64 @@
+9
+
+dir
+12
+http://ONightin@onightin.svn.beanstalkapp.com/rails_projects/flatshare/vendor/plugins/acts_as_favorite/test/fixtures
+http://ONightin@onightin.svn.beanstalkapp.com/rails_projects
+
+
+
+2008-07-29T17:59:19.852028Z
+12
+ONightin
+
+
+svn:special svn:externals svn:needs-lock
+
+users.yml
+file
+
+
+
+
+2008-07-12T12:32:57.000000Z
+ba49f329355c83e12813733b102cb150
+2008-07-29T17:59:19.852028Z
+12
+ONightin
+
+favorites.yml
+file
+
+
+
+
+2008-07-12T12:32:57.000000Z
+d5916777abd8f5787cb9f76a55eab6c3
+2008-07-29T17:59:19.852028Z
+12
+ONightin
+
+drinks.yml
+file
+
+
+
+
+2008-07-12T12:32:57.000000Z
+2847a7e8f5ce49da55d3e243ecc659bc
+2008-07-29T17:59:19.852028Z
+12
+ONightin
+
+books.yml
+file
+
+
+
+
+2008-07-12T12:32:56.000000Z
+e26d07ddc67085c563fdfee0a96830be
+2008-07-29T17:59:19.852028Z
+12
+ONightin
+

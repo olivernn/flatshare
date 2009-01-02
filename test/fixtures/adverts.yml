@@ -1,0 +1,244 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+olivers_advert:
+  rent_frequency: 
+  deposit: 
+  bills: 
+  room_type: "Large Double"
+  postcode: 
+  headline: "New flatseeker"
+  date_available: "2008-08-02"
+  views_counter: "100"
+  type: "Flatseeker"
+  lng: 
+  smoking: "1"
+  id: "11"
+  area: "Battersea"
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna\r\n\
+    \r\n\
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor "
+  quarantine: "0"
+  housemates: 
+  furnished: "0"
+  rent: "2000.00"
+  couples: "0"
+  user_id: "1"
+  bills_frequency: 
+  lat: 
+  interests: "I have some interests"
+  created_at: "2008-09-18 09:28:02"
+  
+katies_advert: 
+    rent_frequency: 
+    deposit: 1500.00
+    bills: 346.67
+    room_type: "Large Double"
+    postcode: "SW18 1TW"
+    headline: "Great flat with view of the Thames"
+    date_available: "2008-09-06"
+    views_counter: 
+    type: "Flatshare"
+    lng: -0.1847400000
+    smoking: 0
+    id: 22
+    area: "Battersea"
+    description: "This is a great opportunity to live in a modern flat overlooking the thames.  There is a gym in the basement and car parking spaces.  The flat has a roof terrace and there are bars and restaurants on the ground floor of the building."
+    quarantine: 0
+    housemates: 1
+    furnished: 0
+    rent: 1300.00
+    couples: 0
+    user_id: 2
+    bills_frequency: 
+    lat: 51.4644580000
+    interests: ""
+    created_at: "2008-09-18 22:29:22"
+
+another_flatshare: 
+    rent_frequency: 
+    deposit: 1500.00
+    bills: 346.67
+    room_type: "Large Double"
+    postcode: "SW18 1TW"
+    headline: "Great flat with view of the Thames"
+    date_available: "2008-09-06"
+    views_counter: 
+    type: "Flatshare"
+    lng: -0.1847400000
+    smoking: 0
+    id: 272
+    area: "Battersea"
+    description: "This is a great opportunity to live in a modern flat overlooking the thames.  There is a gym in the basement and car parking spaces.  The flat has a roof terrace and there are bars and restaurants on the ground floor of the building."
+    quarantine: 0
+    housemates: 1
+    furnished: 0
+    rent: 2200.00
+    couples: 0
+    user_id: 2
+    bills_frequency: 
+    lat: 51.4644580000
+    interests: ""
+    created_at: "2008-09-18 22:29:22"
+    
+flatshare_cj: 
+    rent_frequency: 
+    deposit: 1500.00
+    bills: 346.67
+    room_type: "Large Double"
+    postcode: "SW18 1TW"
+    headline: "Great flat with view of the Thames"
+    date_available: "2008-09-06"
+    views_counter: 
+    type: "Flatshare"
+    lng: -0.1847400000
+    smoking: 0
+    id: 2272
+    area: "Clapham Junction"
+    description: "This is a great opportunity to live in a modern flat overlooking the thames.  There is a gym in the basement and car parking spaces.  The flat has a roof terrace and there are bars and restaurants on the ground floor of the building."
+    quarantine: 0
+    housemates: 1
+    furnished: 0
+    rent: 1200.00
+    couples: 0
+    user_id: 2
+    bills_frequency: 
+    lat: 51.4644580000
+    interests: ""
+    created_at: "2008-09-18 22:29:22"
+    
+flatshare_cj: 
+    rent_frequency: 
+    deposit: 1500.00
+    bills: 346.67
+    room_type: "Large Double"
+    postcode: "SW18 1TW"
+    headline: "Great flat with view of the Thames"
+    date_available: "2008-09-06"
+    views_counter: 
+    type: "Flatshare"
+    lng: -0.1847400000
+    smoking: 0
+    id: 2972
+    area: "Battersea"
+    description: "This is a great opportunity to live in a modern flat overlooking the thames.  There is a gym in the basement and car parking spaces.  The flat has a roof terrace and there are bars and restaurants on the ground floor of the building."
+    quarantine: 0
+    housemates: 1
+    furnished: 0
+    rent: 1200.00
+    couples: 1
+    user_id: 2
+    bills_frequency: 
+    lat: 51.4644580000
+    interests: ""
+    created_at: "2008-09-18 22:29:22"
+
+flatseeker_double:
+  rent_frequency: 
+  deposit: 
+  bills: 
+  room_type: "Double"
+  postcode: 
+  headline: "New flatseeker"
+  date_available: "2008-08-02"
+  views_counter: "100"
+  type: "Flatseeker"
+  lng: 
+  smoking: "1"
+  id: "211"
+  area: "Battersea"
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna\r\n\
+    \r\n\
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor "
+  quarantine: "0"
+  housemates: 
+  furnished: "0"
+  rent: "2000.00"
+  couples: "0"
+  user_id: "1"
+  bills_frequency: 
+  lat: 
+  interests: "I have some interests"
+  created_at: "2008-09-18 09:28:02"
+  
+flatseeker_cj:
+    rent_frequency: 
+    deposit: 
+    bills: 
+    room_type: "Large Double"
+    postcode: 
+    headline: "New flatseeker"
+    date_available: "2008-08-02"
+    views_counter: "100"
+    type: "Flatseeker"
+    lng: 
+    smoking: "1"
+    id: "111"
+    area: "Clapham Junction"
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna\r\n\
+      \r\n\
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor "
+    quarantine: "0"
+    housemates: 
+    furnished: "0"
+    rent: "2000.00"
+    couples: "0"
+    user_id: "1"
+    bills_frequency: 
+    lat: 
+    interests: "I have some interests"
+    created_at: "2008-09-18 09:28:02"
+
+flatseeker_low_rent:
+  rent_frequency: 
+  deposit: 
+  bills: 
+  room_type: "Double"
+  postcode: 
+  headline: "New flatseeker"
+  date_available: "2008-08-02"
+  views_counter: "100"
+  type: "Flatseeker"
+  lng: 
+  smoking: "1"
+  id: "112"
+  area: "Battersea"
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna\r\n\
+    \r\n\
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor "
+  quarantine: "0"
+  housemates: 
+  furnished: "0"
+  rent: "20.00"
+  couples: "0"
+  user_id: "1"
+  bills_frequency: 
+  lat: 
+  interests: "I have some interests"
+  created_at: "2008-09-18 09:28:02"
+  
+flatseeker_couple:
+    rent_frequency: 
+    deposit: 
+    bills: 
+    room_type: "Double"
+    postcode: 
+    headline: "New flatseeker"
+    date_available: "2008-08-02"
+    views_counter: "100"
+    type: "Flatseeker"
+    lng: 
+    smoking: "1"
+    id: "152"
+    area: "Battersea"
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna\r\n\
+      \r\n\
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor "
+    quarantine: "0"
+    housemates: 
+    furnished: "0"
+    rent: "2000.00"
+    couples: "1"
+    user_id: "1"
+    bills_frequency: 
+    lat: 
+    interests: "I have some interests"
+    created_at: "2008-09-18 09:28:02"

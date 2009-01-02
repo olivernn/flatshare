@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/rails_projects/!svn/ver/17/flatshare/vendor/plugins/active_merchant/generators/gateway
+END
+USAGE
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/rails_projects/!svn/ver/17/flatshare/vendor/plugins/active_merchant/generators/gateway/USAGE
+END
+gateway_generator.rb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/rails_projects/!svn/ver/17/flatshare/vendor/plugins/active_merchant/generators/gateway/gateway_generator.rb
+END

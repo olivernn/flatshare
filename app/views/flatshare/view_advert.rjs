@@ -1,0 +1,2 @@
+page.replace_html("advert_display", :partial => "advert")
+page.replace_html("local_information", :partial => "local_information")

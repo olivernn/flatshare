@@ -1,0 +1,7 @@
+
+	<h2 class="title">Messages</h2>
+	<div id="messages" class="expand">
+		<p>Any messages you receive from other users can be accessed from here</p>
+		<p>You have 2 new messages <br/>
+		<a href="/user/show_messages">View messages</a></p>
+	<br/></div>

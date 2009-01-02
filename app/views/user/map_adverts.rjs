@@ -1,0 +1,10 @@
+page << @map.clear_overlays
+
+@map_markers.each do |@marker|
+  page << @map.add_overlay(@marker)
+end
+
+page << @map.panTo(@map_centre)
+page << @map.set_zoom(10)
+
+page.alert("helo")

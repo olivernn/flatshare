@@ -1,0 +1,820 @@
+body {
+	min-height:100%;
+}
+
+a {
+	color:#FA0045;
+}
+
+form {
+	width: 60%;
+	margin-left:20px;
+	margin-bottom:20px;
+}
+
+fieldset{
+	background-color: #FFFBB0;
+	border: 1px solid #ccc;
+	margin: 2em 0;
+	padding: 1em;
+}
+
+legend{
+	font-size:2em;
+	position: relative;
+	top: -.1em;
+	color:#FA0045;
+	font-family:futura, "Trebuchet MS", "sans serif";
+}
+
+label{
+	display:block;
+	float:left;
+	clear:left;
+	width:12em;
+	padding-right:1em;
+	text-align:right;
+	line-height:1.8em;
+	font-weight:bold;
+}
+
+input{
+	margin:0 .5em .5em 0;
+	display:inline;
+	float:left;
+	zoom: 1;
+}
+
+input[type="submit"]{
+	margin-top:5px;
+}
+
+fieldset input[type="submit"]{
+	float:right;
+}
+
+input.button{
+	border:3px solid #381E0B;
+	border-style:outset;
+	float:right;
+	margin-top:5px;
+}
+
+textarea{
+	display:block;
+	float:left;
+	margin:0 .5em .5em 0;
+}
+
+select{
+	margin:0 .5em .5em 0;
+	display:block;
+	float:left;
+}
+
+br{
+	clear:both;
+}
+
+a img {
+	border:0;
+}
+
+table {
+	line-height:1.4em;
+}
+
+caption {
+	color:#FA0045;
+	font-size:1.4em;
+	font-family:futura, "Trebuchet MS", "sans serif";
+	margin-bottom:10px;
+}
+
+th {
+	color:#FA0045;
+	font-size:1.2em;
+	font-family:futura, "Trebuchet MS", "sans serif";
+	font-weight:normal;
+	border-bottom:1px solid #ccc;
+	padding-right:15px;
+	padding-left:10px;
+	text-align:left;
+}
+
+td {
+	padding:10px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+
+td .right_align{
+	text-align:right;
+}
+
+tr.unread{
+	font-weight:bold;
+}
+
+/*layout*/
+#container{
+	position:center;
+	width:975px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:15px;
+	background-image:url(/images/mint_fade.png);
+	background-repeat:repeat-x;
+	background-position:bottom;
+}
+
+#wrapper{
+	clear:both;
+}
+
+#footer{
+	padding-top:10px;
+	clear:both;
+}
+
+#footer li {
+		display:inline;
+}
+
+#footer ul{
+	list-style:none;
+	display:inline;
+}
+
+#footer ul li a{
+	margin-top:25px;
+	color:#FA0045;
+	font-size:0.8em;
+	font-family:futura, "Trebuchet MS", "sans serif";
+}
+
+/* banner main_tabnav */
+#banner_nav{
+	float:right;
+	list-style-type:none;
+}
+
+#banner_nav li{
+	list-style-type:none;
+	float:left;
+}
+
+/* styling the tabs */
+#main_tabnav {
+	clear:both;
+	font-weight:bold;
+	color:#666;
+	margin-left:4px;
+	float:right;
+	list-style-type:none;
+	position:absolute;
+	bottom:20px;
+	right:5px;
+}
+
+#main_tabnav ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#main_tabnav li {
+	float:left;
+	margin:0;
+	padding:0;
+	padding:0 0 0 0;
+}
+
+#main_tabnav a {
+	display:block;
+	/*background-image:url("/images/unactive_tab.png");*/
+	width:89px;
+	font-family:futura, "Trebuchet MS", "sans serif";
+	background-image:url("/images/tab_unselected.png");
+	padding:4px 18px 2px 18px;
+	margin:0 2px 0 2px;
+	text-decoration:none;
+	text-align:center;
+	color:#FA0045;
+	font-size:1.2em;
+	font-weight:normal;
+}
+
+#main_tabnav li.active {
+	/*background-image:url("/images/right_active_tab.png");*/
+}
+
+#main_tabnav a.active {
+	/*background-image:url("/images/active_tab.png");*/
+	width:89px;
+	background-image:url("/images/tab_selected.png");
+	color:#FA0045;
+	text-decoration:none;
+	font-family:futura, "Trebuchet MS", "sans serif";
+}
+
+/* styling the auto_complete list */
+.auto_complete{
+	z-index:1;
+}
+
+/* styling the form help text */
+.help_holder{
+	color:#FA0045;
+	font-size:0.9em;
+	background-color:#FFFCC7;
+	border: 2px inset #ccc;
+	height:1.5em;
+	margin:5px;
+	margin-bottom:15px;
+	padding:2px;
+}
+
+/* styling the flash */
+#flash {
+	position:relative;
+	font-family:Helvetica;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding:2px;
+	background-repeat:no-repeat;
+	background-position:left;
+}
+
+.flash_notice{
+	/* yellow */
+	background-image:url(/images/flash_notice.png);
+}
+
+.flash_warning{
+	/* red */
+	background-image:url(/images/flash_warning.png);
+}
+
+.flash_message{
+	/*green*/
+	background-image:url(/images/flash_message.png);
+}
+
+/* styles for the banner */
+#banner {
+	background:#381E0B;
+	background-image:url(/images/banner_mint_fade.png);
+	background-repeat:repeat-x;
+	background-position:bottom;
+	color:#FA0045;
+	height:86px;
+	position:relative;
+}
+
+#banner h1 {
+	padding:0;
+	margin:0;
+	position:absolute;
+	top:5px;
+	left:15px;
+	font-family:futura, "Trebuchet MS", "sans serif";
+	font-weight:normal;
+}
+
+#busy {
+	position:absolute;
+	top:10px;
+	right:15px;
+}
+
+#busy_bottom{
+	margin-left:175px;
+}
+
+#tabbed_local_infomation form input[type="submit"]{
+	margin-top:2px;
+}
+
+.spin_div {
+  background: #fff url('/images/spinner.gif') no-repeat center center;
+  opacity: 0.75;
+  filter:alpha(opacity: 75);
+  -moz-opacity: 0.75;
+  -khtml-opacity: 0.75;
+}
+
+/* styles for different field types */
+input.tiny_field{
+	width:2em;
+}
+
+input.small_field{
+	width:5em;
+}
+
+input.medium_field{
+	width:10em;
+}
+
+input.medium_field_script_only{
+	width:10em;
+	visibility:hidden;
+}
+
+input.large_field{
+	width:20em;
+}
+
+textarea.small_area{
+	width:10em;
+	height:6em;
+}
+
+textarea.medium_area{
+	width:20em;
+	height:10em;
+}
+
+/* styling the My Account page */
+h2.title{
+	padding:10px;
+	background-image:url(/images/choc_accordion.png);
+	background-repeat:repeat-x;
+	margin:0px;
+	color:#FA0045;
+	font-family:futura, "Trebuchet MS", "sans serif";
+	font-weight:normal;
+}
+
+div.expand{
+	margin-left:20px;
+}
+
+#accordion_holder{
+	float:left;
+	width:60%;
+	border:1px solid #ccc;
+	background-color: #FFFBB0;
+	margin-left:10px;
+}
+
+#account_content{
+	text-align:justify;
+	float:left;
+	width:28%;
+	margin:10px;
+	margin-left:20px;
+	margin-top:0px;
+}
+
+#account_content h1{
+	color:#FA0045;
+	font-family:futura, "Trebuchet MS", "sans serif";
+	font-weight:normal;
+}
+
+/* displaying the user form */
+#user_form form{
+	margin-right:auto;
+	margin-left:auto;
+}
+
+#login_content{
+	margin:10px;
+}
+
+#log_in_form{
+	margin-left:10px;
+	float:left;
+	width:400px;
+}
+
+#log_in_form form{
+	margin-right:auto;
+	margin-left:auto;
+	width:100%;
+}
+
+#new_user_form{
+	margin-right:10px;
+	width:520px;
+	float:right;
+}
+
+#new_user_form form{
+	margin-right:auto;
+	margin-left:auto;
+	width:100%;
+}
+
+.user_form form input[type="checkbox"]{
+	float:none;
+	display:inline;
+	position:relative;
+	top:3px;
+}
+
+p.toc{
+	float:left;
+	font-size:0.8em;
+	margin-left:10px;
+}
+
+/* displaying the messages */
+#message_view{
+	float:right;
+	width:40%;
+	border:1px solid #ccc;
+	padding:10px;
+	margin-top:10px;
+}
+
+#message_list{
+	float:left;
+	width:55%;
+}
+
+#message_list table{
+	margin:10px;
+	border:1px solid #ccc;
+	background-color: #FFFBB0;
+	width:100%;
+}
+
+#message_list .pagination{
+	padding:10px;
+}
+
+/* displaying the forms at the bottom of the adverts */
+#message_form form {
+	margin-left:auto;
+	margin-right:auto;
+	width:90%;
+}
+
+#message_form fieldset {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* displaying the flatshares */
+#form_and_map{
+	float:left;
+	width:43%;
+}
+
+#search_form{
+	width:00px;
+}
+
+#search_form form{
+	padding:0px;
+	margin-left:0px;
+	margin-right:0px;
+}
+
+#search_form fieldset{
+	width:372px;
+	margin-left:10px;
+	margin-top:0px;
+}
+
+#map_and_local{
+	float:right;
+	width:500px;
+}
+
+#map_holder{
+	float:right;
+	width:500px;
+	padding:10px;
+	border:1px solid #ccc;
+	background-color: #FFFBB0;
+	background-color: #FFFBB0;
+	margin-top:10px;
+	margin-right:10px;
+}
+
+#local_information{
+	float:right;
+	width:500px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+	border:1px solid #ccc;
+	margin-top:9px;
+	margin-right:10px;
+}
+
+#slideshow_holder #local_container{
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:10px;
+	padding:10px;
+}
+
+#flickr{
+	margin:10px;
+	width:475px;
+}
+
+#advert_display{
+	border:1px solid #ccc;
+	margin:10px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+	text-align:justify;
+}
+
+#advert_display h1{
+	color:#FA0045;
+	font-family:futura, "Trebuchet MS", "sans serif";
+	font-weight:normal;
+	line-height:125%;
+	text-align:left;
+}
+
+#advert_display #flatshare_details{
+	width:100%;
+	border:none;
+}
+
+.routealert_green{
+	font-size:0.8em;
+	color:green;
+}
+
+.routealert_red{
+	font-size:0.8em;
+	color:red;
+}
+
+/* displaying flatseekers */
+#search_and_table{
+	float:left;
+	width:45%;
+}
+
+#flatseeker_results_table{
+	margin:10px;
+	border:1px solid #ccc;
+	background-color: #FFFBB0;
+	width:440px;
+}
+
+#flatseeker_search_form{
+	padding-right:10px;
+}
+
+#flatseeker_search_form form{
+	margin:10px;
+	width:440px;
+}
+
+#flatseeker_advert_display{
+	float:right;
+	width:50%;
+	margin:10px;
+	margin-top:35px;
+	border:1px solid #ccc;
+	padding:10px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#flatseeker_advert_display h1{
+	color:#FA0045;
+	font-family:futura, "Trebuchet MS", "sans serif";
+	font-weight:normal;
+}
+
+#flatseeker_details{
+	border:1px solid #ccc;
+	padding:10px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* styling the articles page */
+#article_list {
+	margin:10px;
+	border:1px solid #ccc;
+	background-color: #FFFBB0;
+	float:left;
+	width:30%;
+}
+
+#article_list h2{
+	margin:10px;
+	color:#FA0045;
+	font-family:futura, "Trebuchet MS", "sans serif";
+	font-weight:normal;
+}
+
+#article_display {
+	text-align:justify;
+	float:left;
+	width:60%;
+	margin:10px;
+	padding:10px;
+}
+
+#article_display h1{
+	color:#FA0045;
+	font-family:futura, "Trebuchet MS", "sans serif";
+	font-weight:normal;
+}
+
+#article_form_content {
+	text-align:justify;
+	width:60%;
+	margin:10px;
+	padding:10px;
+}
+
+#article_form_content h1{
+	color:#FA0045;
+	font-family:futura, "Trebuchet MS", "sans serif";
+	font-weight:normal;
+}
+
+/*displaying the welcome page*/
+#featured_adverts{
+	float:left;
+	width:33%;
+	border:1px solid #ccc;
+	background-color: #FFFBB0;
+	margin:10px;
+	padding:10px;
+	margin-top:20px;
+}
+
+#featured_adverts ul{
+	margin-right:auto;
+	margin-left:auto;
+	padding:0px;
+	list-style-type:none;
+}
+
+#featured_adverts ul li{
+	margin:10px;
+	float:left;
+}
+
+#featured_adverts h3{
+	color:#FA0045;
+	font-family:futura, "Trebuchet MS", "sans serif";
+	font-size:1.5em;
+	font-weight:normal;
+	margin-left:15px;
+}
+
+#about_us_content{
+	float:left;
+	width:37%;
+	margin:10px;
+	text-align:justify;
+}
+
+#log_in{
+	float:right;
+	width:23%;
+	margin-top:20px;
+	display:inline;
+}
+
+#log_in fieldset{
+	margin:10px;
+}
+
+#log_in_buttons{
+	margin-top:5px;
+}
+
+#log_in input[type="submit"]{
+	margin-top:0px;
+}
+
+.welcome_form label{
+	width:6em;
+	text-align:left;
+}
+
+#log_in form div{
+	margin-right:10%;
+}
+
+/* displaying the payments page */
+#payments_content{
+	width:70%;
+	margin-right:auto;
+	margin-left:auto;
+	text-align:justify;
+}
+
+#payments_form form{
+	margin-right:auto;
+	margin-left:auto;
+}
+
+table .confirm_title{
+	text-align:right;
+	font-weight:bold;
+}
+
+#confirm_content{
+	float:left;
+	width:40%;
+}
+
+#confirm_details{
+	margin:10px;
+	float:left;
+	border:1px solid #ccc;
+	background-color: #FFFBB0;
+	padding:15px;
+}
+
+#confirm_details input{
+	margin-left:20px;
+}
+
+/* displaying the advert */
+img.picture{
+	width:8em;
+	height:8em;
+	padding:10px;
+}
+
+fieldset#pictures{
+	clear:both;
+	border:1px solid #ccc;
+	background-color: #FFFBB0;
+}
+
+#flash_player_container{
+	margin-right:auto;
+	margin-left:auto;
+	margin-bottom:10px;
+}
+
+#form_holder form{
+	margin-right:auto;
+	margin-left:auto;
+}
+
+#advert_edit_form form{
+	margin-right:auto;
+	margin-left:auto;
+}
+
+#advert_details{
+	padding:5px;
+	border:1px solid #ccc;
+	width:75%;
+	margin:5px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#advert_lists {
+	padding:5px;
+	border:1px solid #ccc;
+	width:60%;
+	margin:5px;
+}
+
+#advert_lists table {
+	margin:10px;
+}
+
+#advert_lists td {
+	padding:25px;
+	width:100px;
+}
+
+#flatshare_details div{
+	padding:5px;
+}
+
+#local_stations{
+	margin-bottom:10px;
+}
+
+#controls {
+	margin-right:auto;
+	margin-left:auto;
+	padding-top:5px;
+	padding-bottom:5px;
+	width:60%;
+}
+
+#picture_form {
+	padding:5px;
+	border:1px solid #ccc;
+	width:50%;
+	margin:5px;
+}
+

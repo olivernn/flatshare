@@ -1,0 +1,1 @@
+<p>Call <%= user.full_name %> on <%= user.contact_number %></p>

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/test/data
+END
+server.pem
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/test/data/server.pem
+END
+server.csr
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/test/data/server.csr
+END
+htpasswd
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/test/data/htpasswd
+END
+server.crt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/test/data/server.crt
+END
+server.key
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/rails_projects/!svn/ver/68/flatshare/vendor/mechanize-0.8.4/test/data/server.key
+END

@@ -1,0 +1,13 @@
+<div id='place_details'>
+	<h3><%= @place.name %></h3>
+	<h4><%= @place.category %></h4>
+	<p><%= @place.description %></p>
+	<p>Postcode :<%= @place.postcode %></p>
+</div>
+
+<div id='map_container'></div>
+
+<%= link_to icon('house', 'back'), :action => 'index' %> | 
+<%= link_to icon('building_edit', 'edit place details'), :action => 'edit_place', :id => @place.id%> | 
+<%= link_to_remote icon('map', 'show this place on a map'), :url => {:action => 'show_place_map', :id => @place.id},
+ 														    :update => 'map_container'%>

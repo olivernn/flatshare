@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/widgets
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/widgets/Rakefile
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/widgets/init.rb
+END
+CHANGELOG
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/widgets/CHANGELOG
+END
+install.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/widgets/install.rb
+END
+uninstall.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/widgets/uninstall.rb
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/rails_projects/!svn/ver/12/flatshare/vendor/plugins/widgets/README
+END

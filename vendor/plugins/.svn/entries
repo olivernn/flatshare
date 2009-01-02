@@ -1,0 +1,73 @@
+9
+
+dir
+3
+http://ONightin@onightin.svn.beanstalkapp.com/rails_projects/flatshare/vendor/plugins
+http://ONightin@onightin.svn.beanstalkapp.com/rails_projects
+
+
+
+2008-06-04T17:04:21.481159Z
+1
+ONightin
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+368aaf9d-2c01-482e-a271-8484209ccfac
+
+will_paginate
+dir
+
+acts_as_textiled
+dir
+
+geokit
+dir
+
+attachment_fu
+dir
+
+newrelic_rpm
+dir
+
+criteriaquery
+dir
+
+active_merchant
+dir
+
+validates_as_uk_postcode
+dir
+
+flashplayrhelpr
+dir
+
+mysql_bigint
+dir
+
+exception_notification
+dir
+
+widgets
+dir
+
+simple_http_auth
+dir
+
+acts_as_favorite
+dir
+
+ym4r_gm
+dir
+

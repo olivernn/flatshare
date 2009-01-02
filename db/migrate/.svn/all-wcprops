@@ -1,0 +1,347 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/rails_projects/!svn/ver/1/flatshare/db/migrate
+END
+012_create_flatseekers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/rails_projects/!svn/ver/10/flatshare/db/migrate/012_create_flatseekers.rb
+END
+031_fix_place_type.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/rails_projects/!svn/ver/16/flatshare/db/migrate/031_fix_place_type.rb
+END
+047_add_help_list_flag.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/rails_projects/!svn/ver/22/flatshare/db/migrate/047_add_help_list_flag.rb
+END
+004_change_table_name.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/rails_projects/!svn/ver/1/flatshare/db/migrate/004_change_table_name.rb
+END
+018_add_flatshare_attributes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/rails_projects/!svn/ver/11/flatshare/db/migrate/018_add_flatshare_attributes.rb
+END
+016_create_messages.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/rails_projects/!svn/ver/11/flatshare/db/migrate/016_create_messages.rb
+END
+035_create_habtm_for_advert.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/rails_projects/!svn/ver/16/flatshare/db/migrate/035_create_habtm_for_advert.rb
+END
+034_create_adverts.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/rails_projects/!svn/ver/16/flatshare/db/migrate/034_create_adverts.rb
+END
+043_create_promotions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/rails_projects/!svn/ver/21/flatshare/db/migrate/043_create_promotions.rb
+END
+045_add_crtstamp_to_adverts.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/rails_projects/!svn/ver/21/flatshare/db/migrate/045_add_crtstamp_to_adverts.rb
+END
+022_change_lat_lng_to_decimal.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/rails_projects/!svn/ver/11/flatshare/db/migrate/022_change_lat_lng_to_decimal.rb
+END
+017_add_user_id.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/rails_projects/!svn/ver/11/flatshare/db/migrate/017_add_user_id.rb
+END
+056_add_content_type_column.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/rails_projects/!svn/ver/31/flatshare/db/migrate/056_add_content_type_column.rb
+END
+027_add_flatseeker_attributes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/rails_projects/!svn/ver/16/flatshare/db/migrate/027_add_flatseeker_attributes.rb
+END
+033_fix_user_contact_number.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/rails_projects/!svn/ver/16/flatshare/db/migrate/033_fix_user_contact_number.rb
+END
+020_change_message_from.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/rails_projects/!svn/ver/11/flatshare/db/migrate/020_change_message_from.rb
+END
+049_add_quarantine_flag_to_adverts.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/rails_projects/!svn/ver/26/flatshare/db/migrate/049_add_quarantine_flag_to_adverts.rb
+END
+001_create_flatshares.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/rails_projects/!svn/ver/1/flatshare/db/migrate/001_create_flatshares.rb
+END
+013_add_freq_to_flatseeker.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/rails_projects/!svn/ver/10/flatshare/db/migrate/013_add_freq_to_flatseeker.rb
+END
+044_fix_contact_number.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/rails_projects/!svn/ver/21/flatshare/db/migrate/044_fix_contact_number.rb
+END
+048_add_handled_attribute_to_flags.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/rails_projects/!svn/ver/25/flatshare/db/migrate/048_add_handled_attribute_to_flags.rb
+END
+014_add_defaults.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/rails_projects/!svn/ver/10/flatshare/db/migrate/014_add_defaults.rb
+END
+026_fix_join_table.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/rails_projects/!svn/ver/16/flatshare/db/migrate/026_fix_join_table.rb
+END
+008_create_lookups.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/rails_projects/!svn/ver/1/flatshare/db/migrate/008_create_lookups.rb
+END
+006_create_pictures.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/rails_projects/!svn/ver/1/flatshare/db/migrate/006_create_pictures.rb
+END
+015_create_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/rails_projects/!svn/ver/11/flatshare/db/migrate/015_create_users.rb
+END
+057_add_sessions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/rails_projects/!svn/ver/51/flatshare/db/migrate/057_add_sessions.rb
+END
+010_change_lookup_column_name.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/rails_projects/!svn/ver/1/flatshare/db/migrate/010_change_lookup_column_name.rb
+END
+029_add_view_counter.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/rails_projects/!svn/ver/16/flatshare/db/migrate/029_add_view_counter.rb
+END
+025_create_many_to_many_join_tables.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/rails_projects/!svn/ver/16/flatshare/db/migrate/025_create_many_to_many_join_tables.rb
+END
+030_create_places.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/rails_projects/!svn/ver/16/flatshare/db/migrate/030_create_places.rb
+END
+028_create_favorites.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/rails_projects/!svn/ver/16/flatshare/db/migrate/028_create_favorites.rb
+END
+053_remove_rich_attribute_habtm_index.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/rails_projects/!svn/ver/28/flatshare/db/migrate/053_remove_rich_attribute_habtm_index.rb
+END
+037_add_places_table.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/rails_projects/!svn/ver/16/flatshare/db/migrate/037_add_places_table.rb
+END
+032_remove_places_table.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/rails_projects/!svn/ver/16/flatshare/db/migrate/032_remove_places_table.rb
+END
+039_add_role_flags_to_user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/rails_projects/!svn/ver/18/flatshare/db/migrate/039_add_role_flags_to_user.rb
+END
+055_create_images.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/rails_projects/!svn/ver/31/flatshare/db/migrate/055_create_images.rb
+END
+002_fix_rent_bills.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/rails_projects/!svn/ver/1/flatshare/db/migrate/002_fix_rent_bills.rb
+END
+011_add_frequency_to_flatshare.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/rails_projects/!svn/ver/1/flatshare/db/migrate/011_add_frequency_to_flatshare.rb
+END
+054_add_promotion_description.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/rails_projects/!svn/ver/29/flatshare/db/migrate/054_add_promotion_description.rb
+END
+041_add_indexes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/rails_projects/!svn/ver/20/flatshare/db/migrate/041_add_indexes.rb
+END
+038_create_help_texts.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/rails_projects/!svn/ver/17/flatshare/db/migrate/038_create_help_texts.rb
+END
+023_change_couples_ind_name.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/rails_projects/!svn/ver/16/flatshare/db/migrate/023_change_couples_ind_name.rb
+END
+003_create_rich_attriubtes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/rails_projects/!svn/ver/1/flatshare/db/migrate/003_create_rich_attriubtes.rb
+END
+050_create_quarantines.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/rails_projects/!svn/ver/26/flatshare/db/migrate/050_create_quarantines.rb
+END
+009_add_area_to_flatshare.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/rails_projects/!svn/ver/1/flatshare/db/migrate/009_add_area_to_flatshare.rb
+END
+019_add_message_subject.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/rails_projects/!svn/ver/11/flatshare/db/migrate/019_add_message_subject.rb
+END
+036_associate_pictures_with_adverts.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/rails_projects/!svn/ver/16/flatshare/db/migrate/036_associate_pictures_with_adverts.rb
+END
+040_create_pages.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/rails_projects/!svn/ver/18/flatshare/db/migrate/040_create_pages.rb
+END
+042_add_frequency_to_advert.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/rails_projects/!svn/ver/20/flatshare/db/migrate/042_add_frequency_to_advert.rb
+END
+051_increase_length_of_description.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/rails_projects/!svn/ver/26/flatshare/db/migrate/051_increase_length_of_description.rb
+END
+046_create_flags.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/rails_projects/!svn/ver/22/flatshare/db/migrate/046_create_flags.rb
+END
+052_add_footer_tag_to_pages.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/rails_projects/!svn/ver/26/flatshare/db/migrate/052_add_footer_tag_to_pages.rb
+END
+021_create_stations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/rails_projects/!svn/ver/11/flatshare/db/migrate/021_create_stations.rb
+END
+007_link_flatshare_to_picture.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/rails_projects/!svn/ver/1/flatshare/db/migrate/007_link_flatshare_to_picture.rb
+END
+024_add_new_flatseeker_cols.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/rails_projects/!svn/ver/16/flatshare/db/migrate/024_add_new_flatseeker_cols.rb
+END
+005_add_lat_lng.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/rails_projects/!svn/ver/1/flatshare/db/migrate/005_add_lat_lng.rb
+END
