@@ -15,6 +15,11 @@ class PagesController < ApplicationController
   def welcome
     @page = Page.display('welcome')
     @featured_adverts = Advert.featurable
+    @mapping_adverts = Page.display('mapping_adverts')
+    @local_search = Page.display('local_search')
+    @local_reviews = Page.display('local_reviews')
+    @local_stations = Page.display('local_stations')
+    @travel_search = Page.display('travel_search')
   end
 
   def show_picture

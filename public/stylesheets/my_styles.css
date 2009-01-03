@@ -643,7 +643,7 @@ p.toc{
 /*displaying the welcome page*/
 #featured_adverts{
 	float:left;
-	width:33%;
+	width:10%;
 	border:1px solid #ccc;
 	background-color: #FFFBB0;
 	margin:10px;
@@ -673,8 +673,8 @@ p.toc{
 
 #about_us_content{
 	float:left;
-	width:37%;
-	margin:10px;
+	width:75%;
+	margin-left:25px;
 	text-align:justify;
 }
 
@@ -704,6 +704,43 @@ p.toc{
 
 #log_in form div{
 	margin-right:10%;
+}
+
+#about_us_content p{
+	font-size:1.1em;
+}
+
+/* this is to overcome a weird margin at the bottom of the accordian that is inherited from somewhere else */
+#about_us_content #accordion_holder #local_stations{
+	margin-bottom:0px;
+}
+
+#about_us_content #accordion_holder{
+	width:100%;
+	margin-left:0px;
+	float:none;
+}
+
+#about_us_content #accordion_holder .expand_image{
+	float:right;
+	width:50%;
+}
+
+#accordion_holder .expand_text{
+	width:45%;
+	float:left;
+}
+
+.expand_text p{
+	font-size:1.1em;
+	line-height:22px;
+	font-color:#ccc;
+	text-align:left;
+}
+
+.expand_image img{
+	margin-bottom:10px;
+	margin-top:10px;
 }
 
 /* displaying the payments page */

@@ -172,4 +172,16 @@ module ApplicationHelper
   def show_message_link(text, message)
     link_to_remote text, :url => {:action => "view_message", :id => message.id}
   end
+  
+  def featured_advert_picture(ad)
+    if ad.images.empty?
+      if ad.type = Flatshare
+        "/images/flatshare_missing_picture.png"
+      else
+        "/images/flatseeker_missing_picture.png"
+      end
+    else
+      ad.images.first.public_filename(:thumb)
+    end
+  end
 end

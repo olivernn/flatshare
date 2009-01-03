@@ -33,7 +33,7 @@ class Advert < ActiveRecord::Base
   end
   
   def self.featurable
-    find(:all, :joins => "INNER JOIN images ON images.advert_id = adverts.id", :select => 'DISTINCT adverts.*', :order => 'adverts.created_at ASC, adverts.views_counter ASC', :limit => 6)
+    (find(:all, :joins => "INNER JOIN images ON images.advert_id = adverts.id", :select => 'DISTINCT adverts.*', :order => 'adverts.created_at ASC, adverts.views_counter ASC', :limit => 6) | find(:all, :order => 'adverts.created_at ASC, adverts.views_counter ASC', :limit => 6)).slice(0,5)
   end
   
   def selected_rich_attributes
