@@ -1,0 +1,52 @@
+<h2 class="title">Mapping Adverts</h2>
+<div id="mapping_adverts" class="expand">
+	<div class="expand_text"><%= @mapping_adverts.content %></div>
+	<div class="expand_image">
+		<%= image_tag('/images/frontpage/mapped_advert.png', :alt => 'adverts shown on google maps',
+															 :class => 'frontpage_image') %>
+	</div>
+</div>
+
+<h2 class="title">Local Search</h2>
+<div id="local_search" class="expand">
+	<div class="expand_text"><%= @local_search.content %></div>
+	<div class="expand_image">
+		<%= image_tag('/images/frontpage/local_search.png', :alt => 'local search results on google maps',
+															 :class => 'frontpage_image') %>
+	</div>
+</div>
+
+<h2 class="title">Local Reviews</h2>
+<div id="local_reviews" class="expand">
+	<div class="expand_text"><%= @local_reviews.content %></div>
+	<div class="expand_image">
+		<%= image_tag('/images/frontpage/local_reviews.png', :alt => 'local reviews',
+															 :class => 'frontpage_image') %>
+	</div>
+</div>
+
+<h2 class="title">Local Stations</h2>
+<div id="local_stations" class="expand">
+	<div class="expand_text"><%= @local_stations.content %></div>
+	<div class="expand_image">
+		<%= image_tag('/images/frontpage/local_stations.png', :alt => 'stations local to advert',
+															  :class => 'frontpage_image') %>
+	</div>
+</div>
+
+<h2 class="title">Travel Search</h2>
+<div id="travel_search" class="expand">
+	<div class="expand_text"><%= @travel_search.content %></div>
+	<div class="expand_image">
+		<%= image_tag('/images/frontpage/travel_search.png', :alt => 'travel search results',
+															 :class => 'frontpage_image') %>
+	</div>
+</div>
+
+<h2 class="title">Create Advert</h2>
+<div id="sign_up" class="expand">
+	<div class="expand_text">Some sign up text etc will be placed here</div>
+</div>
+
+
+<%= accordion('title', 'expand', :alwaysHide => true) %>
