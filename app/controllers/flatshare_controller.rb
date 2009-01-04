@@ -166,7 +166,7 @@ class FlatshareController < ApplicationController
   
   #auto complete methods
   def auto_complete_for_flatshare_area
-    @areas = Area.get_areas(params[:flatshare][:area])
+    @areas = Area.get_areas(params[:flatshare][:area]) rescue nil
     render :partial => 'shared/areas'
   end
   

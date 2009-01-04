@@ -13,7 +13,7 @@
 <%= link_to_remote 'Bars & Restaurants',  :url => {:action => 'local_places', :id => @flatshare},
  							  :before => visual_effect(:fade, 'tabbed_local_infomation', :duration => 0.2),
 							  :update => 'tabbed_local_infomation',
-							  :complete => visual_effect(:appear, 'tabbed_local_infomation', :duration => 0.2) %>	
+							  :complete => visual_effect(:appear, 'tabbed_local_infomation', :duration => 0.2) %>
 
 <img id='busy_bottom' class='busy' src='/images/ajax-loader.gif'/>
 

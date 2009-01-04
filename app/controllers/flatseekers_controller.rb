@@ -89,7 +89,8 @@ class FlatseekersController < ApplicationController
   end
   
   def auto_complete_for_flatseeker_area
-    get_areas(params[:flatseeker][:area]) rescue nil
+    @areas = Area.get_areas(params[:flatseeker][:area])
+    render :partial => 'shared/areas'
   end
   
   private

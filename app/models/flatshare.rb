@@ -2,6 +2,9 @@ class Flatshare < Advert
   acts_as_mappable :auto_geocode => {:field => :postcode, :error_message => 'Unable to geocode postcode'}
   acts_as_favorite
   
+  # not implemented yet, this will auto detect the area from the response of the geocode call
+  #before_create :geocode_postcode
+  
   #has_and_belongs_to_many :rich_attributes
 
   #validations                                            
@@ -39,12 +42,13 @@ class Flatshare < Advert
           if station
             find(:all, :origin => [station.lat, station.lng], :conditions => ['distance <? AND area IN (?) AND rent <? AND quarantine = false AND created_at >?', search_params[:distance][0,1], area, search_params[:max_rent], two_weeks_ago])
           else
-            query.area_eq(area).rent_lt(search_params[:max_rent]).quarantine_eq(0).created_at_gt(two_weeks_ago).find
-            #find(:all, :conditions => ['area IN(?) AND rent <? AND quarantine = false AND created'])
+            #query.area_eq(area).rent_lt(search_params[:max_rent]).quarantine_eq(0).created_at_gt(two_weeks_ago).find
+            find(:all, :conditions => ['area IN(?) AND rent <? AND quarantine = false AND created = false AND created_at >?', area, search_params[:max_rent], two_weeks_ago])
           end
         else
           #search using maximum rent and area
-          query.area_eq(area).rent_lt(search_params[:max_rent]).quarantine_eq(0).created_at_gt(two_weeks_ago).find
+          #query.area_eq(area).rent_lt(search_params[:max_rent]).quarantine_eq(0).created_at_gt(two_weeks_ago).find
+          find(:all, :conditions => ['area IN(?) AND rent <? AND quarantine = false AND created = false AND created_at >?', area, search_params[:max_rent], two_weeks_ago])
         end
       else
         if search_params[:station]
@@ -68,12 +72,13 @@ class Flatshare < Advert
           if station
             find(:all, :origin => [station.lat, station.lng], :conditions => ['distance <? AND area =? AND quarantine = false AND created_at >?', search_params[:distance][0,1], area, two_weeks_ago])
           else
-            query.area_eq(area).quarantine_eq(0).created_at_gt(two_weeks_ago).find
+            #query.area_eq(area).quarantine_eq(0).created_at_gt(two_weeks_ago).find
+            find(:all, :conditions => ['area in(?) AND quarantine = false AND created_at >?', area, two_weeks_ago])
           end
         else
           #search using area
           #query.area_eq(area).quarantine_eq(0).created_at_gt(two_weeks_ago).find
-          find(:all, :conditions => ['area =?', area])
+          find(:all, :conditions => ['area IN (?)', area])
         end
       else
         if search_params[:station]
@@ -96,5 +101,23 @@ class Flatshare < Advert
   
   def local_places
     PlaceSearch.new(self.lat, self.lng).get_local_places
+  end
+  
+  private
+  def geocode_postcode
+    loc = GeoKit::Geocoders::MultiGeocoder.geocode(self.postcode)
+    if loc.success
+      self.lat = loc.lat
+      self.lng = loc.lng
+      self.area = loc.area
+      entered_area = Area.find_by_name(self.area)
+      unless entered_area
+        self.area = loc.city.split(",").first unless Area.find_by_name(self.area)
+      else
+        self.area = entered_area
+      end
+    else
+      logger.info "geocoding failed"
+    end
   end
 end

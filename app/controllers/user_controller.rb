@@ -12,11 +12,13 @@ class UserController < ApplicationController
   cache_sweeper :message_sweeper, :favourite_sweeper
   
   def auto_complete_for_flatshare_area
-    get_areas(params[:flatshare][:area]) rescue nil
+    @areas = Area.get_areas(params[:flatshare][:area]) rescue nil
+    render :partial => 'shared/areas'
   end
   
   def auto_complete_for_flatseeker_area
-    get_areas(params[:flatseeker][:area]) rescue nil
+    @areas = Area.get_areas(params[:flatseeker][:area]) rescue nil
+    render :partial => 'shared/areas'
   end
   
   def add_user

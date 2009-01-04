@@ -6,21 +6,22 @@ class Flatseeker < Advert
     page = search_params[:page]
     search_params[:rent] ||= search_params[:flatseeker][:rent]
     search_params[:area] ||= search_params[:flatseeker][:area]
+    area = Area.interpret(search_params[:area])
     if search_params[:rent]
-      if search_params[:area]
+      if area
         #search using area and maximum rent
         #query.area(search_params[:area]).rent_lt(search_params[:rent]).find
-        paginate(:per_page => 5, :page => page, :conditions =>[ 'area =? AND rent >=? AND quarantine = false', search_params[:area], search_params[:rent]], :order => 'created_at DESC')
+        paginate(:per_page => 5, :page => page, :conditions =>[ 'area IN(?) AND rent >=? AND quarantine = false', area, search_params[:rent]], :order => 'created_at DESC')
       else
         #search using maximum rent
         #query.rent_lt(search_params[:rent]).find
         paginate(:per_page => 5, :page => page, :conditions =>[ 'rent >=? AND quarantine = false', search_params[:rent]], :order => 'created_at DESC')
       end
     else
-      if search_params[:area]
+      if area
         #search using area
         #query.area_eq(search_params[:area]).find
-        paginate(:per_page => 5, :page => page, :conditions =>[ 'area =? AND quarantine = false', search_params[:area]], :order => 'created_at DESC')
+        paginate(:per_page => 5, :page => page, :conditions =>[ 'area IN(?) AND quarantine = false', area], :order => 'created_at DESC')
       else
         false
       end

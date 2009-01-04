@@ -33,8 +33,4 @@ xml.urlset "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9" do
   xml.url do
     xml.loc url_for(:controller => 'pages', :action => 'welcome', :only_path => false)
   end
-  
-  xml.url do
-    xml.loc url_for(:only_path => false)
-  end
 end
