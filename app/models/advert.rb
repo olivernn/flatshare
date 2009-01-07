@@ -1,19 +1,26 @@
-class Advert < ActiveRecord::Base  
+class Advert < ActiveRecord::Base 
+  # relationships 
   belongs_to :user
   has_many :pictures
   has_many :images
   has_many :quarantines
   has_and_belongs_to_many :rich_attributes
   
+  # acts_as_
   acts_as_favorite
   acts_as_textiled :description
   
-  #validations
+  # validations
   validates_numericality_of :rent
   validates_presence_of :date_available, :headline
   validates_length_of :description, :minimum => 100, :too_short=>"please enter at least %d character"
   
+  # attr
   attr_accessor :rent_frequency, :bills_frequency
+  
+  # callbacks
+  before_update :refresh_before_update
+  before_save :convert_bills_to_monthly, :convert_rent_to_monthly, :strip_headline_full_stops
   
   def to_param
     "#{id}-#{CGI.escape(headline.gsub(' ', '-'))}"
@@ -87,8 +94,7 @@ class Advert < ActiveRecord::Base
   end
   
   def refresh_applicable
-    three_days_ago = Time.now - 3 * (60 * 60 * 24)
-    self.created_at < three_days_ago
+    self.created_at < 3.days.ago
   end
   
   #get pictures near to the advert
@@ -101,16 +107,24 @@ class Advert < ActiveRecord::Base
     (self.description.split[0..(wordcount-1)].join(" ") + (self.description .split.size > wordcount ? "..." : "")).gsub(/<\/?[^>]*>/,  "")
   end
   
-  def before_save
+  def convert_bills_to_monthly
     if bills_frequency == "Weekly"
       self.bills = (self.bills * 52)/12
     end
-    
+  end
+  
+  def convert_rent_to_monthly
     if rent_frequency == "Weekly"
       self.rent = (self.rent * 52)/12
     end
+  end
     
+  def strip_headline_full_stops
     #remove full stops from the headline
     self.headline = self.headline.gsub('.', '')
+  end
+  
+  def refresh_before_update
+    self.created_at = Time.now() if self.refresh_applicable
   end
 end

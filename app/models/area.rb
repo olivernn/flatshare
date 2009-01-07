@@ -6,20 +6,22 @@ class Area < ActiveRecord::Base
   
   def self.interpret(input_string)
     # try and find by the name of the area e.g. "Battersea"
-    area = self.create_name_string(self.find_by_name(input_string))
-    unless area
-      # try and find by the postcode area, e.g. SW11
-      area = self.create_name_string(self.find(:all, :conditions => ['postcode_area =?', input_string]))
+    if input_string
+      area = self.create_name_string(self.find_by_name(input_string))
       unless area
-        # try and find by borough e.g. "Wandsworth"
-        area = self.create_name_string(self.find(:all, :conditions => ['borough like ?', "%" + input_string+ "%"]))
+        # try and find by the postcode area, e.g. SW11
+        area = self.create_name_string(self.find(:all, :conditions => ['postcode_area =?', input_string]))
         unless area
-          # can't find the area, ignore this parameter
-          area = nil
+          # try and find by borough e.g. "Wandsworth"
+          area = self.create_name_string(self.find(:all, :conditions => ['borough like ?', "%" + input_string + "%"]))
+          unless area
+            # can't find the area, ignore this parameter
+            area = nil
+          end
         end
       end
+      area
     end
-    area
   end
   
   def self.get_areas(input_string)

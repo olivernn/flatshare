@@ -1,8 +1,20 @@
-#this script will refresh the welcome page cache
+# this script will refresh the welcome page cache
+# deliberate misspelling of the name to match the crontab
 require 'open-uri'
 
-filename = "/home/admin/public_html/londonflatmate.net/current/public/index.html"
-File.delete(filename) if File.exists?(filename)
+# constants throughout the script
+FILEPATH = "/home/admin/public_html/londonflatmate.net/current/public/"
+EXTENSION = ".html"
+SERVER = "http://londonflatmate.net/"
 
-#uncomment the line below when live to regenerate the cache
-open("http://londonflatmate.net")
+# add the name of the cache to periodically expire to the array
+caches_to_expire = Array[
+  "index",
+  "flatshare"]
+  
+# loop to refresh_page_cache
+caches_to_expire.each do |cache|
+  filename = FILEPATH + cache + EXTENSION
+  File.delete(filename) if File.exists?(filename)
+  open(SERVER + (cache == "index" ? "" : cache))
+end

@@ -87,13 +87,12 @@ class FlatshareController < ApplicationController
     unless !@flatshares || @flatshares.empty?
       if request.xhr?
         @map_markers = Array.new
-        flatshare_ids = Array.new
-        map_centre = Array.new
-        @flatshares.each do |@flatshare|
-          @map_markers << GMarker.new([@flatshare.lat,@flatshare.lng], :info_window => render_to_string(:partial => "info_window", :locals => { :advert => @flatshare }))
-          flatshare_ids << @flatshare.id
+        unless @flatshares.empty?
+          @flatshares.each do |advert|
+            @map_markers << GMarker.new([advert.lat,advert.lng], :info_window => render_to_string(:partial => "flatshare/info_window", :locals => { :advert => advert}))
+          end
+        @map_centre = get_map_centre(@flatshares)
         end
-        @map_centre = get_map_centre(flatshare_ids)
       else
         render :action => 'list'
       end
@@ -103,22 +102,15 @@ class FlatshareController < ApplicationController
   end
   
   def search
-    map_markers = Array.new
-    @map = GMap.new("map_div")
-    @map.control_init(:large_map => true, :map_type => true, :local_search => true, :anchor => :bottom_right, :offset_width => 10, :offset_height => 10)
-    @map.center_zoom_init([51.510018,-0.130424,], 12)
+    # get the data to build the page from the database
     @distances = get_lookup_values('Distance')
     @search = Page.display('flatshare_search')
     @local_information = Page.display('local_information')
     @flatshares = Flatshare.find_current
-    unless @flatshares.empty?
-      @flatshares.each do |flatshare|
-        map_markers << GMarker.new([flatshare.lat,flatshare.lng], :info_window => render_to_string(:partial => "flatshare/info_window", :locals => { :advert => flatshare}))
-      end
-      map_markers.each do |marker|
-        @map.overlay_init(marker)
-      end
-    end
+    # use the flatshare data to build the map
+    set_up_map
+    set_up_map_markers(@flatshares)
+    centre_on_bounds(@flatshares)
   end
   
   def message_advert_owner
@@ -196,10 +188,49 @@ class FlatshareController < ApplicationController
   end
   
   private
-  def get_map_centre(ids)
-    lat = Flatshare.average(:lat, :conditions => ["id IN (?)", ids])
-    lng = Flatshare.average(:lng, :conditions => ["id IN (?)", ids])
-    Ym4r::GmPlugin::GLatLng.new([lat, lng])
+  def centre_on_bounds(adverts)
+    unless adverts.empty?
+      sorted_lat = adverts.collect(&:lat).compact.sort
+      sorted_lng = adverts.collect(&:lng).compact.sort
+      @map.center_zoom_on_bounds_init([[sorted_lat.first, sorted_lng.first],
+                                       [sorted_lat.last, sorted_lng.last]])
+    else
+      @map.center_zoom_init([51.510018,-0.130424,], 12)
+    end
+  end
+  
+  def calculate_bounds(adverts)
+    sorted_lat = adverts.collect(&:lat).compact.sort
+    sorted_lng = adverts.collect(&:lng).compact.sort
+    GLatLngBounds.new([[sorted_lat.first, sorted_lng.first],
+                 [sorted_lat.last, sorted_lng.last]])
+  end
+  
+  def set_up_map
+    @map = GMap.new("map_div")
+    @map.control_init(:large_map => true, :map_type => true, :local_search => true, :anchor => :bottom_right, :offset_width => 10, :offset_height => 10)
+  end
+  
+  def set_up_map_markers(adverts)
+    @map_markers = Array.new
+    unless adverts.empty?
+      adverts.each do |advert|
+        @map_markers << GMarker.new([advert.lat,advert.lng], :info_window => render_to_string(:partial => "flatshare/info_window", :locals => { :advert => advert}))
+      end
+      @map_markers.each do |marker|
+        @map.overlay_init(marker)
+      end
+    end
+  end
+  
+  def get_map_centre(adverts)
+    Array.class_eval do
+      # this method will compute the mathmatical mean of the contents of an array
+      def mean
+        inject(0){ |sum, n| sum + n } / length.to_f
+      end
+    end
+    Ym4r::GmPlugin::GLatLng.new([adverts.collect(&:lat).mean, adverts.collect(&:lng).mean])
   end
     
   def add_rich_attributes(advert)
