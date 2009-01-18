@@ -80,6 +80,11 @@ a img {
 	border:0;
 }
 
+a img.icon2{
+	padding:0px;
+	margin:0px;
+}
+
 table {
 	line-height:1.4em;
 }
@@ -289,7 +294,8 @@ tr.unread{
 }
 
 #busy_bottom{
-	margin-left:175px;
+	margin-left:140px;
+	margin-top:8px	;
 }
 
 #tabbed_local_infomation form input[type="submit"]{
@@ -496,6 +502,14 @@ p.toc{
 	margin-right:10px;
 }
 
+#advert_map_holder{
+	width:300px;
+	padding:10px;
+	border:1px solid #ccc;
+	background-color: #FFFBB0;
+	margin:10px;
+}
+
 #local_information{
 	float:right;
 	width:500px;
@@ -539,6 +553,35 @@ p.toc{
 #advert_display #flatshare_details{
 	width:100%;
 	border:none;
+}
+
+#clear{
+	clear:both;
+}
+
+.advert_buttons{
+	list-style:none;
+}
+
+.inline_advert_buttons{
+	list-style:none;
+}
+
+.inline_advert_buttons li{
+	display:inline;
+}
+
+#advert_buttons_right{
+	float:left;
+	width:100px;
+	padding-left:10px;
+}
+
+#advert_buttons_left{
+	float:left;
+	width:100px;
+	padding-left:0px;
+	margin-left:0px;
 }
 
 .routealert_green{
@@ -743,6 +786,15 @@ p.toc{
 	margin-top:10px;
 }
 
+.sign_up_text{
+	margin:10px;
+}
+
+.sign_up_text p{
+	width:75%;
+	margin:10px;
+}
+
 /* displaying the payments page */
 #payments_content{
 	width:70%;
@@ -807,6 +859,19 @@ fieldset#pictures{
 	margin-left:auto;
 }
 
+#view_advert_details{
+	padding:15px;
+	padding-top:0px;
+	width:80%;
+}
+
+#view_advert_details h1{
+	color:#FA0045;
+	font-family:futura, "Trebuchet MS", "sans serif";
+	font-weight:normal;
+	font-size:3em;
+}
+
 #advert_details{
 	padding:5px;
 	border:1px solid #ccc;
@@ -845,7 +910,7 @@ fieldset#pictures{
 	margin-left:auto;
 	padding-top:5px;
 	padding-bottom:5px;
-	width:60%;
+	width:68%;
 }
 
 #picture_form {

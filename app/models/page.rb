@@ -1,4 +1,5 @@
 class Page < ActiveRecord::Base
+  require 'hpricot'
   acts_as_textiled :content
   
   #this overrides the way rails creates the url, we're adding the permalink in here
@@ -25,5 +26,14 @@ class Page < ActiveRecord::Base
   def snippet
     wordcount = 35
     (self.content.split[0..(wordcount-1)].join(" ") + (self.content.split.size > wordcount ? "..." : "")).gsub(/<\/?[^>]*>/,  "")
+  end
+  
+  def paragraphs
+    arr = Array.new
+    html = Hpricot.parse(self.content)
+    (html/:p).each do |p|
+      arr << p.to_html
+    end
+    arr
   end
 end

@@ -17,11 +17,13 @@
 			<%= link_to 'Create Flatshare Advert', :action => 'new_flatshare' %> | 
 			<%= link_to 'Create Flatseeker Advert', :action => 'new_flatseeker' %></p>
 		<% else %>
-		<p>Details of your advert can be found here</p>
+		<p>Details of your advert can be found here:</p>
 			<p>
-				<%= @advert.headline %>
-				<%= link_to image_tag("/images/icons/layout_edit.png", :alt => 'edit advert', :title => 'edit advert'), :action => 'edit_advert'%>
-				<%= link_to image_tag("/images/icons/layout.png", :alt => 'show advert', :title => 'show  advert'), :action => 'show_advert'%>
+				<strong><%= link_to @advert.headline, :action => 'view_advert', :id => @advert %></strong>
+			</p>
+			<p>
+				<%= link_to icon2('edit_advert', 'edit your advert'), :action => 'edit_advert'%>
+				<%= link_to icon2('view_advert', 'view your advert'), :action => 'view_advert', :id => @advert%>
 				<%= refresh_advert_link(@advert) %>
 			</p>
 			<% unless @advert.quarantine %>
@@ -46,7 +48,7 @@
 					<tr>
 						<td><%= link_to advert.headline, :action => 'view_advert', :id => advert.id  %></td>
 						<td><%= truncate(advert.description,60) %></td>
-						<td><%= link_to icon('layout','show advert details'), :action => 'view_advert', :id => advert.id %></td>
+						<td><%= link_to icon2('view_advert','show advert details'), :action => 'view_advert', :id => advert.id %></td>
 					</tr>
 				<% end %>
 			</table>
@@ -66,8 +68,8 @@
 				<tr>
 					<td><%= link_to favourite_advert.headline, :action => 'view_advert', :id => favourite_advert.id %></td>
 					<td><%= truncate(favourite_advert.description,60) %></td>
-					<td><%= link_to icon('heart_delete', 'remove advert from favourties'), :method => 'post', :action => 'delete_favourite', :id => favourite_advert.id %></td>
-					<td><%= link_to icon('layout','show advert'), :action => 'view_advert', :id => favourite_advert.id %></td>
+					<td><%= link_to icon2('delete_favourite', 'remove advert from favourties'), :method => 'post', :action => 'delete_favourite', :id => favourite_advert.id %></td>
+					<td><%= link_to icon2('view_advert', 'view your advert'), :action => 'view_advert', :id => favourite_advert.id %></td>
 				</tr>
 			<% end %>
 		</table>
@@ -78,9 +80,9 @@
 <h2 class="title">Account Controls</h2>
 <div id="account" class="expand">
 	<p>Click on the icons below to log out, edit your profile or change your password</p>
-	<p><%= link_to icon('door_in', 'log out'), :action => 'logout'%> |
-	   <%= link_to icon('user_edit', 'edit your profile'), :action => 'edit_user' %> |
-	   <%= link_to icon('key_go', 'change your password'), :action => 'edit_password' %>
+	<p><%= link_to icon2('log_out', 'log out of your account'), :action => 'logout'%>
+	   <%= link_to icon2('edit_account', 'edit your profile'), :action => 'edit_user' %>
+	   <%= link_to icon2('change_password', 'change your password'), :action => 'edit_password' %>
 	</p>
 	<% if @user.authority == 9 %>
 		<p><%= link_to 'lookups', :controller => 'lookups', :action => 'index' %>

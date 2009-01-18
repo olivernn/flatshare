@@ -56,7 +56,7 @@ module ApplicationHelper
   
   #if the advert is new on today display an icon
   def is_new_advert(advert_date)
-    if advert_date >= Time.now - (60 * 60 * 24)
+    if advert_date >= 1.day.ago
       icon("new", "new advert")
     end
   end
@@ -71,6 +71,11 @@ module ApplicationHelper
   #method for having nice icon links
   def icon(name, text)
     image_tag "/images/icons/" + name + ".png", :alt => text, :title => text
+  end
+  
+  # new method for the new icons introduced in 1.2, this should not be used except for testing!
+  def icon2(name, text)
+    image_tag "/images/icon2/" + name + ".png", :alt => text, :title => text, :class => 'icon2'
   end
   
   #method for displaying a link to map adverts only if they are flatshare adverts
@@ -118,7 +123,7 @@ module ApplicationHelper
 
   def refresh_advert_link(advert)
     if advert.refresh_applicable
-      link_to_remote( icon('arrow_refresh', 'refresh your advert'), {:url => {:action => 'refresh_advert', :id => advert.id}}, :id => 'refresh_advert_button')
+      link_to_remote( icon2('refresh', 'refresh your advert'), {:url => {:action => 'refresh_advert', :id => advert.id}}, :id => 'refresh_advert_button')
     end
   end
 
@@ -145,7 +150,7 @@ module ApplicationHelper
   
   def advert_controls(advert)
     if advert.user_id == session[:user_id]
-      render :partial => 'shared/advert_owner_controls', :locals => {:advert => advert }
+      render :partial => 'shared/advert_owner_controls', :locals => {:advert => advert}
     else
       render :partial => 'shared/advert_controls', :locals => {:advert => advert }
     end

@@ -1,3 +1,10 @@
-<%= link_to_remote icon('picture_add', 'add picture'), :url => {:controller => 'image', :action => 'new', :id => advert}, :update => 'form_holder' %> |
-<%= link_to icon('layout_edit', 'edit'), :controller => 'user', :action => 'edit_advert', :id => advert %> |
-<%= link_to icon('house', 'home'), :controller => 'user', :action => 'index' %>
+<ul class="inline_advert_buttons">
+	<li><%= link_to_remote icon2('add_picture', 'add picture'),
+			:url => {:controller => 'image', :action => 'new', :id => advert},
+			:update => 'form_holder' %></li>
+			
+	<li><%= link_to icon2('edit_advert', 'edit your advert'),
+			:controller => 'user',
+			:action => 'edit_advert',
+			:id => advert %></li>
+</ul>

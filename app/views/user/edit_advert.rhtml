@@ -9,11 +9,18 @@
 			<% end%>
 		<% end %>
 		<%= render :partial => 'edit_rich_attributes', :locals => {:attributes => @rich_attributes} %>
+		<div id="form_holder"></div>
    		<%= button 'edit' %>
 	<% end %>
 </div>
-<div id="form_holder"></div>
 <div id="controls">
-<%= link_to_remote icon('picture_add', 'add picture'), :url => {:controller => 'image', :action => 'new', :id => @advert}, :update => 'form_holder', :complete => visual_effect(:blind_down) %> |
-<%= link_to icon('house', 'home'), :action => 'index' %>
+<ul class="inline_advert_buttons">
+	<li><%= link_to_remote icon2('add_picture', 'add a picture to your advert'),
+	:url => {:controller => 'image', :action => 'new', :id => @advert}, 
+	:update => 'form_holder', 
+	:before => visual_effect(:fade, 'form_holder', :duration => 0.2), 
+	:complete => visual_effect(:appear, 'form_holder', :duration => 0.2) %></li>
+	
+	<li><%= link_to icon2('home', 'home'), :action => 'index' %></li>
+</ul>
 </div>

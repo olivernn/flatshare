@@ -2,8 +2,10 @@
 <div id="mapping_adverts" class="expand">
 	<div class="expand_text"><%= @mapping_adverts.content %></div>
 	<div class="expand_image">
-		<%= image_tag('/images/frontpage/mapped_advert.png', :alt => 'adverts shown on google maps',
-															 :class => 'frontpage_image') %>
+		<%= link_to image_tag('/images/frontpage/mapped_advert.png', :alt => 'adverts shown on google maps',
+															 		 :class => 'frontpage_image'),
+																	 :controller => 'flatshare',
+																	 :action => 'index' %>
 	</div>
 </div>
 
@@ -11,14 +13,18 @@
 <div id="local_search" class="expand">
 	<div class="expand_text"><%= @local_search.content %></div>
 	<div class="expand_image">
-		<%= image_tag('/images/frontpage/local_search.png', :alt => 'local search results on google maps',
-															 :class => 'frontpage_image') %>
+		<%= link_to image_tag('/images/frontpage/local_search.png', :alt => 'local search results on google maps',
+															 		:class => 'frontpage_image'),
+															 		:controller => 'flatshare',
+																	:action => 'index' %>
 	</div>
 </div>
 
 <h2 class="title">Local Reviews</h2>
 <div id="local_reviews" class="expand">
-	<div class="expand_text"><%= @local_reviews.content %></div>
+	<div class="expand_text"><%= @local_reviews.content %>
+		<p><a href="http://trustedplaces.com/"><img src="http://trustedplaces.com/img/v3/api/logo_01.png" alt="Powered by TrustedPlaces" style="border:0px;vertical-align:bottom;" /></a></p>
+	</div>
 	<div class="expand_image">
 		<%= image_tag('/images/frontpage/local_reviews.png', :alt => 'local reviews',
 															 :class => 'frontpage_image') %>
@@ -45,8 +51,11 @@
 
 <h2 class="title">Create Advert</h2>
 <div id="sign_up" class="expand">
-	<div class="expand_text">Some sign up text etc will be placed here</div>
+	<div class="sign_up_text"><%= link_to button('create'), :controller => 'user', :action => 'login'%>
+	<%= @sign_up.paragraphs.first %></div>
+	<div class="sign_up_text"><%= link_to button('search'), :controller => 'flatshare', :action => 'search'%>
+	<%= @sign_up.paragraphs.last %></div>
+	<br/>
 </div>
 
-
-<%= accordion('title', 'expand', :alwaysHide => true) %>
+<%= accordion('title', 'expand', :alwaysHide => false) %>

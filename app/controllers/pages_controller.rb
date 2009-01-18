@@ -1,9 +1,9 @@
 class PagesController < ApplicationController
   layout 'standard'
-  before_filter :is_admin, :except => [:welcome, :show_picture, :article_list, :show_article, :terms_and_conditions, :contact_us]
+  before_filter :is_admin, :except => [:welcome, :show_picture, :article_list, :ajax_show_article, :show_article, :terms_and_conditions, :contact_us]
   
   caches_page :article_list, :welcome, :terms_and_conditions
-  caches_page :show_article
+  caches_page :show_article, :ajax_show_article
   
   cache_sweeper :page_sweeper
   
@@ -20,6 +20,7 @@ class PagesController < ApplicationController
     @local_reviews = Page.display('local_reviews')
     @local_stations = Page.display('local_stations')
     @travel_search = Page.display('travel_search')
+    @sign_up = Page.display('sign_up')
   end
 
   def show_picture
@@ -56,13 +57,15 @@ class PagesController < ApplicationController
     @articles = Page.get_articles
   end
   
+  # slightly dodgy hack to get around weird problem with the caching and showing articles with and without ajax
   def show_article
     @article = Page.find(params[:id])
-    #render :partial => 'article' if request.xhr?
-    respond_to do |format|
-      format.html {render :action => 'show_article'}
-      format.js {render :partial => 'article'}
-    end
+  end
+  
+  # slightly dodgy hack to get around weird problem with the caching and showing articles with and without ajax
+  def ajax_show_article
+    @article = Page.find(params[:id])
+    render :partial => 'article'
   end
 
   def show

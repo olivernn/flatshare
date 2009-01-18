@@ -1,28 +1,29 @@
 <% if logged_in %>
 <div id="contact_advert">
-  <%= link_to_remote icon("email_edit", 'send message'), 
-	:url => {:controller => 'user', :action => 'new_message', :id => advert.user_id}, 
-	:update => 'message_form', 
-	:before => visual_effect(:fade, 'message_form', :duration => 0.2), 
-	:complete => visual_effect(:appear, 'message_form', :duration => 0.2) %> |
-	
-  <%= link_to_remote icon("telephone", 'contact number'), 
-	:url => {:action => 'advert_contact_number', :id => advert.user_id}, 
-	:update => 'message_form', 
-	:before => visual_effect(:fade, 'message_form', :duration => 0.2), 
-	:complete => visual_effect(:appear, 'message_form', :duration => 0.2)  %> |
-	
-  <%= link_to_remote icon('heart_add', 'add to favourites'), 
-	:url => {:action => 'add_to_favourites', :id => advert}, 
-	:id => 'add_favourite'%> |
-	
-  <%= link_to_remote icon('flag_red', 'flag this advert'), 
-	:url => {:controller => 'flag', :action => 'new_flag', :id => advert.id}, 
-	:update => 'message_form', 
-	:before => visual_effect(:fade, 'message_form', :duration => 0.2), 
-	:complete => visual_effect(:appear, 'message_form', :duration => 0.2)%>
+	<ul id="advert_buttons_left" class="advert_buttons">
+		<li><%= link_to_remote icon2('send_message', 'send message'),
+		:url => {:controller => 'user', :action => 'new_message', :id => advert.user_id}, 
+		:update => 'message_form', 
+		:before => visual_effect(:fade, 'message_form', :duration => 0.2), 
+		:complete => visual_effect(:appear, 'message_form', :duration => 0.2) %></li>
+		<li><%= link_to_remote icon2('contact_number', 'contact number'),
+		:url => {:action => 'advert_contact_number', :id => advert.user_id}, 
+		:update => 'message_form', 
+		:before => visual_effect(:fade, 'message_form', :duration => 0.2), 
+		:complete => visual_effect(:appear, 'message_form', :duration => 0.2)  %></li>
+	</ul>
+	<ul id="advert_buttons_right" class="advert_buttons">
+		<li><%= link_to_remote icon2('add_favourite', 'add to favourites'),
+		:url => {:action => 'add_to_favourites', :id => advert}, 
+		:id => 'add_favourite'%></li>
+		<li><%= link_to_remote icon2('flag', 'flag this advert'),
+		:url => {:controller => 'flag', :action => 'new_flag', :id => advert.id}, 
+		:update => 'message_form', 
+		:before => visual_effect(:fade, 'message_form', :duration => 0.2), 
+		:complete => visual_effect(:appear, 'message_form', :duration => 0.2)%></li>
+	</ul>
 </div>
-<div id="message_form"/>
+<div id="clear"><div id="message_form"/></div>
 <% else %>
 <p><%= link_to 'Contact Advert Owner', :controller => 'user', :action => 'login' %></p>
 <% end %>

@@ -1,4 +1,5 @@
 <legend>Manage Photos</legend>
+
 <% images.each do |image|%>
 	<%= display_image(image) %>
 	<%= link_to_remote icon('picture_delete', 'delete picture'), 

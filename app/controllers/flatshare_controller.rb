@@ -195,7 +195,7 @@ class FlatshareController < ApplicationController
       @map.center_zoom_on_bounds_init([[sorted_lat.first, sorted_lng.first],
                                        [sorted_lat.last, sorted_lng.last]])
     else
-      @map.center_zoom_init([51.510018,-0.130424,], 12)
+      @map.center_zoom_init([51.510018,-0.130424], 12)
     end
   end
   

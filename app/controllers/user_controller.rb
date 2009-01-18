@@ -130,6 +130,15 @@ class UserController < ApplicationController
     end
   end
   
+# method to display a particular advert on a map
+  def map_advert
+    @advert = Advert.find(params[:id])
+    if @advert.type == Flatshare
+      display_map(@advert)
+    end
+    render :partial => 'advert_map'
+  end
+  
 #show a set of adverts on a map
   def map_adverts
     @page = Page.display("map_adverts")
@@ -295,7 +304,7 @@ class UserController < ApplicationController
         end
       else
         flash.now[:notice] = 'Advert was successfully updated.'
-        render :action => 'show_advert', :id => @advert
+        render :action => 'view_advert', :id => @advert
       end
     else
       @frequency = get_frequency
@@ -427,7 +436,14 @@ class UserController < ApplicationController
     @pictures = @advert.pictures.find
   end
   
-  private  
+  private
+  def display_map(flatshare)
+    @map = GMap.new("map_div")
+    @map.control_init(:large_map => false, :map_type => true, :local_search => false, :anchor => :bottom_right, :offset_width => 10, :offset_height => 10)
+    @map.overlay_init(GMarker.new([flatshare.lat,flatshare.lng]))
+    @map.center_zoom_init([flatshare.lat,flatshare.lng], 15)
+  end
+  
   def show_flatshare_advert(user)
     @flatshare = user.flatshares
     render :partial => 'flatshare/advert', :object => @flatshare

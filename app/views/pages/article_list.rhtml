@@ -4,7 +4,7 @@
 	<h2>Articles</h2>
 	<ul>
 		<% @articles.each do |article| %>
-			<li><%= link_to_remote article.name, {:url => {:action => 'show_article', :id => article},
+			<li><%= link_to_remote article.name, {:url => {:action => 'ajax_show_article', :id => article},
 												  :update => 'article_display',
 												  :method => :get,
 			 									  :before => visual_effect(:fade, 'article_display', :duration => 0.2), 

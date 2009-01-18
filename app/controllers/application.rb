@@ -120,7 +120,7 @@ class ApplicationController < ActionController::Base
       end
     else
       #user has not logged in
-      flash.now[:notice] = "Please log in"
+      # flash.now[:notice] = "Please log in" #-- removed this becuase it keeps being displayed  when it shouldn't!
       redirect_to(:controller => 'user', :action => 'login')
       false
     end
