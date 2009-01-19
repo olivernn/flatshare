@@ -1,5 +1,6 @@
 #this script will remove all sessions greater than 30 mins old
 require 'mysql'
+puts Time.now.to_s + " - Clearing stale sessions"
 
 #connect to mysql
 m = Mysql.new("localhost", "flatshare", "computer")

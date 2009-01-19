@@ -1,6 +1,7 @@
 # this script will refresh the welcome page cache
 # deliberate misspelling of the name to match the crontab
 require 'open-uri'
+puts Time.now.to_s + " - Refreshing page caches"
 
 # constants throughout the script
 FILEPATH = "/home/admin/public_html/londonflatmate.net/current/public/"

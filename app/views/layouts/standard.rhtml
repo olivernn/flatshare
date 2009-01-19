@@ -12,10 +12,6 @@
   <%= javascript_include_tag 'moo.fx.js' %>
   <%= javascript_include_tag 'accordion' %>
   <%= javascript_include_tag 'ufo' %>
-  <!-- added to make sure that transparent pngs are properly dealt with by IE6-->
-  <!--[if lte IE 6]>
-    <%= javascript_include_tag 'supersleight' %>
-  <![endif]-->
   <% if @map %>
     <%= GMap.header(:local_search => true) %>
   	<%= @map.to_html %>

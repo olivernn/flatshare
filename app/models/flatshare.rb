@@ -43,12 +43,12 @@ class Flatshare < Advert
             find(:all, :origin => [station.lat, station.lng], :conditions => ['distance <? AND area IN (?) AND rent <? AND quarantine = false AND created_at >?', search_params[:distance][0,1], area, search_params[:max_rent], two_weeks_ago])
           else
             #query.area_eq(area).rent_lt(search_params[:max_rent]).quarantine_eq(0).created_at_gt(two_weeks_ago).find
-            find(:all, :conditions => ['area IN(?) AND rent <? AND quarantine = false AND created = false AND created_at >?', area, search_params[:max_rent], two_weeks_ago])
+            find(:all, :conditions => ['area IN(?) AND rent <? AND quarantine = false AND created_at >?', area, search_params[:max_rent], two_weeks_ago])
           end
         else
           #search using maximum rent and area
           #query.area_eq(area).rent_lt(search_params[:max_rent]).quarantine_eq(0).created_at_gt(two_weeks_ago).find
-          find(:all, :conditions => ['area IN(?) AND rent <? AND quarantine = false AND created = false AND created_at >?', area, search_params[:max_rent], two_weeks_ago])
+          find(:all, :conditions => ['area IN(?) AND rent <? AND quarantine = false AND created_at >?', area, search_params[:max_rent], two_weeks_ago])
         end
       else
         if search_params[:station]

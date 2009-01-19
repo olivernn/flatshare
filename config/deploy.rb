@@ -1,6 +1,12 @@
 set :application, "londonflatmate.net"
 set :user, "admin"
-set :repository,  "http://onightin.svn.beanstalkapp.com/rails_projects/flatshare/"
+# this is the old source on svn, now using github
+# set :repository,  "http://onightin.svn.beanstalkapp.com/rails_projects/flatshare/"
+set :repository, "git@github.com:olivernn/flatshare.git"
+
+# If you aren't using Subversion to manage your source code, specify
+# your SCM below:
+set :scm, :git
 
 set :runner, user
 set :use_sudo, true
@@ -20,10 +26,6 @@ set :deploy_via, :copy
 #this points to the ssh key since we called it something different
 ssh_options[:keys] = %w(~/.ssh/key)
 ssh_options[:port] = 30000
-
-# If you aren't using Subversion to manage your source code, specify
-# your SCM below:
-# set :scm, :subversion
 
 role :app, application
 role :web, application

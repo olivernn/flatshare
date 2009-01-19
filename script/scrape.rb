@@ -5,7 +5,7 @@ require 'hpricot'
 require 'open-uri'
 require 'cgi'
 
-file = File.new("/users/oliver/documents/rails_projects/gumtree_20081130.txt", "w+")
+file = File.new("/users/oliver/documents/rails_projects/gumtree_20090118.txt", "w+")
 
 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].each do |page_number|
   doc = open("http://www.gumtree.com/london/2509_#{page_number}.html") { |f| Hpricot(f) }
